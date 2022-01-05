@@ -1,0 +1,285 @@
+@charset "utf-8";
+body {
+	font-family: "맑은 고딕";
+}
+#wrap {
+	clear: both;
+	height: auto;
+	width: 1722px;
+	margin-top: 0px;
+}
+#page_header {
+	clear: both;
+	height: 122px;
+	width: 1722px;
+	margin-top: 0px;
+	float: left;
+}
+.ptop {
+	color: #999999;
+	background-color: #1b1b1b;
+	clear: both;
+	float: left;
+	height: 33px;
+	width: 1722px;
+	margin-top: 0px;
+	text-align: center;
+	padding-top: 7px;
+}
+.phead {
+	clear: both;
+	float: left;
+	height: 82px;
+	width: 1722px;
+	margin-top: 0px;
+}
+.logo {
+	font-size: 55px;
+	float: left;
+	height: 82px;
+	width: 130px;
+	color: #000;
+	text-align: center;
+	font-weight: bolder;
+}
+.pmenu {
+	font-weight: bold;
+	color: #1B1B1B;
+	float: left;
+	width: 640px;
+	height: 82px;
+	font-size: 20px;
+}
+.pm1 {
+	float: left;
+	height: 52px;
+	width: auto;
+	padding-top: 30px;
+	padding-right: 12px;
+	padding-left: 12px;
+}
+.logo a {
+	color: #000;
+	text-decoration: none;
+}
+.logo a: hover {
+	color: #000;
+	text-decoration: none;
+}
+.pmenu a {
+	color: #1B1B1B;
+	text-decoration: none;
+}
+.pm1 a:hover {
+	color: #6A2300;
+	text-decoration: none;
+}
+.psmenu {
+	float: right;
+	height: 82px;
+	width: 400px;
+	font-weight: normal;
+	color: #1B1B1B;
+	font-size: 15px;
+}
+.pms2 {
+	float: left;
+	height: 52px;
+	width: auto;
+	padding-top: 30px;
+	padding-right: 12px;
+	padding-left: 12px;
+}
+.psmenu a {
+	color: #1B1B1B;
+	text-decoration: none;
+}
+.pms2 a:hover {
+	color: #6A2300;
+	text-decoration: none;
+}
+#main {
+	clear: both;
+	height: auto;
+	width: 1722px;
+}
+.mainimg {
+	background-image: url(images/main/mainimg1.jpg);
+	clear: both;
+	height: 800px;
+	width: 1676px;
+	margin-left: 23px;
+	text-align: center;
+	padding-left: 639px;
+	padding-top: 400px;
+	background-repeat: no-repeat;
+}
+
+.mimgbtn1 {
+	height: 40px;
+	width: 264px;
+	color: #666666;
+	background-color: #FFF;
+	margin-bottom: 20px;
+	padding-top: 10px;
+	font-size: 18px;
+	margin-left: 67px;
+}
+.micon1 {
+	clear: both;
+	height: auto;
+	width: 398px;
+}
+.micon2 {
+	font-size: 60px;
+	font-weight: bolder;
+	color: #FFF;
+}
+.micon3 {
+	margin-top: 20px;
+	margin-bottom: 70px;
+	font-size: 22px;
+	font-weight: bold;
+	color: #FFF;
+}
+.micon2 a {
+	color: #FFF;
+	text-decoration: none;
+}
+.micon3 a {
+	color: #FFF;
+	text-decoration: none;
+}
+.mimgbtn1 a {
+	color: #666;
+	text-decoration: none;
+}
+.mimgbtn1 a:hover {
+	color: #666;
+	text-decoration: underline;
+}
+.ma1 {
+	clear: both;
+	height: 191px;
+	width: 1722px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	background-image: url(images/main/ma1.jpg);
+	padding-top: 80px;
+	background-repeat: no-repeat;
+}
+.mabtn1 {
+	height: 38px;
+	width: 264px;
+	color: #666666;
+	background-color: #FFF;
+	margin-bottom: 13px;
+	padding-top: 12px;
+	font-size: 18px;
+}
+.macon {
+	width: 264px;
+	height: 110px;
+	margin-left: 730px;
+	text-align: center;
+}
+.mabtn1 a {
+	color: #666;
+	text-decoration: none;
+}
+#banner {
+	height: 775px;
+	clear: both;
+	width: 1722px;
+	margin-bottom: 40px;
+}
+.ban1 {
+	float: left;
+	height: 504px;
+	width: 551px;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding-top: 271px;
+}
+.bacon {
+	text-align: left;
+	float: left;
+	height: 52px;
+	width: 454px;
+	margin-left: 30px;
+	margin-bottom: 10px;
+	font-size: 45px;
+	font-weight: bolder;
+	color: #000;
+	clear: both;
+}
+.bacon2 {
+	font-size: 18px;
+	text-align: left;
+	font-weight: normal;
+	margin-left: 30px;
+	margin-bottom: 30px;
+	color: #666;
+	clear: both;
+	float: left;
+}
+.babtn {
+	background-color: #000;
+	text-align: center;
+	margin-left: 30px;
+	margin-bottom:10px;
+	clear: both;
+	float: left;
+	height: 34px;
+	width: 220px;
+	padding-top: 10px;
+	color: #FFF;
+}
+.ban2 {
+	float: left;
+	height: 775px;
+	width: 551px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.banimg {
+	height: 731px;
+	width: 551px;
+}
+.baninfo {
+	float: left;
+	text-decoration: underline;
+	text-align: left;
+	clear: both;
+	padding-top:15px;
+	padding-left:10px;
+	height: 29px;
+	width: 541px;
+}
+.baninfo a {
+	color: #000;
+	text-decoration: underline;
+}
+#footer {
+	clear: both;
+	float: left;
+	height: 307px;
+	width: 1722px;
+	background-image: url(images/main/footer.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+.tedul {
+	clear: both;
+	height: 100px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCC;
+	width: 1676px;
+	margin-left: 23px;
+	margin-top: 100px;
+}
+.babtn a {
+	color: #FFF;
+	text-decoration: none;
+}
