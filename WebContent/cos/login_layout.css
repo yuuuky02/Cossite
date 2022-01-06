@@ -1,0 +1,165 @@
+@charset "utf-8";
+body {
+	font-family: "맑은 고딕";
+}
+#wrap {
+	clear: both;
+	height: auto;
+	width: 1722px;
+	margin-top: 0px;
+}
+#page_header {
+	clear: both;
+	height: 122px;
+	width: 1722px;
+	margin-top: 0px;
+	float: left;
+}
+.phead {
+	clear: both;
+	float: left;
+	height: 82px;
+	width: 1722px;
+	margin-top: 0px;
+	position: fixed;
+	background-color: #FFF;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	top: 0px;
+}
+.logo {
+	font-size: 55px;
+	float: left;
+	height: 82px;
+	width: 130px;
+	color: #000;
+	text-align: center;
+	font-weight: bolder;
+}
+.pmenu {
+	font-weight: bold;
+	color: #1B1B1B;
+	float: left;
+	width: 640px;
+	height: 82px;
+	font-size: 20px;
+}
+.pm1 {
+	float: left;
+	height: 52px;
+	width: auto;
+	padding-top: 30px;
+	padding-right: 12px;
+	padding-left: 12px;
+}
+.logo a {
+	color: #000;
+	text-decoration: none;
+}
+.logo a: hover {
+	color: #000;
+	text-decoration: none;
+}
+.pmenu a {
+	color: #1B1B1B;
+	text-decoration: none;
+}
+.pm1 a:hover {
+	color: #6200C4;
+	text-decoration: none;
+}
+.psmenu {
+	float: right;
+	height: 82px;
+	width: 400px;
+	font-weight: normal;
+	color: #1B1B1B;
+	font-size: 15px;
+}
+.pms2 {
+	float: left;
+	height: 52px;
+	width: auto;
+	padding-top: 30px;
+	padding-right: 12px;
+	padding-left: 12px;
+}
+.psmenu a {
+	color: #1B1B1B;
+	text-decoration: none;
+}
+.pms2 a:hover {
+	color: #6200C4;
+	text-decoration: overline;
+}
+#main {
+	clear: both;
+	height: auto;
+	width: 1722px;
+}
+#footer {
+	clear: both;
+	float: left;
+	height: 307px;
+	width: 1722px;
+	background-image: url(images/main/footer.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+.tedul {
+	clear: both;
+	height: 100px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCC;
+	width: 1676px;
+	margin-left: 23px;
+	margin-top: 100px;
+}
+.join {
+	clear: both;
+	float: left;
+	height: 400px;
+	width: 420px;
+	margin-top: 100px;
+	margin-left: 651px;
+	margin-bottom: 100px;
+	border: 1px solid #CCC;
+	text-align:center;
+}
+#jointable tr td strong {
+	font-family: "맑은 고딕";
+	font-size: 28px;
+	color: #666;
+}
+#jointable {
+	text-align: center;
+	color: #333;
+}
+#id {
+	font-size: 18px;
+	color: #333333;
+	float: left;
+	clear: both;
+	width: 190px;
+	height: 30px;
+	margin-top: 10px;
+	margin-left: 20px;
+	background-color: #F2F2F2;
+	border: 1px solid #F2F2F2;
+	font-weight: normal;
+}
+#password {
+	font-size: 18px;
+	color: #333333;
+	float: left;
+	clear: both;
+	width: 190px;
+	height: 30px;
+	margin-top: 10px;
+	margin-left: 20px;
+	background-color: #F2F2F2;
+	border: 1px solid #F2F2F2;
+	font-weight: normal;
+}
