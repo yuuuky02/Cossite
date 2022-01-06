@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.sql.*,my.util.*,my.dao.*,my.model.*,java.util.*" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -51,8 +54,8 @@
       
       <div class="psmenu">
         <div class="pms2"><a href="search.html">검색</a></div>
-        <div class="pms2"><a href="/Cos/login/loginForm.html">로그인</a></div>
-        <div class="pms2"><a href="/Cos/join/joinForm.html">회원가입</a></div>
+        <div class="pms2"><a href="memberinfo.html"><%=session.getAttribute("LOGINID") %> COS</a></div>
+        <div class="pms2"><a href="/Cos/login/logout.jsp">로그아웃</a></div>
         <div class="pms2"><a href="wishlist.html">위시리스트</a></div>
         <div class="pms2"><a href="cart.html">장바구니</a></div>
       </div>

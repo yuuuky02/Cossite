@@ -1,9 +1,12 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.sql.*,my.util.*,my.dao.*,my.model.*,java.util.*" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Cos_main</title>
-<link href="/Cos/cos/css/main_layout.css" rel="stylesheet" type="text/css" />
+<link href="/Cos/cos/css/login_layout.css" rel="stylesheet" type="text/css" />
 <link href="/Cos/cos/SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
 <script src="/Cos/cos/SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
 </head>
@@ -48,43 +51,47 @@
           </ul>
         </li>
       </ul>
-      
       <div class="psmenu">
         <div class="pms2"><a href="search.html">검색</a></div>
-        <div class="pms2"><a href="/Cos/login/loginForm.html">로그인</a></div>
-        <div class="pms2"><a href="/Cos/join/joinForm.html">회원가입</a></div>
+        <div class="pms2"><a href="/Cos/login/admin.jsp"><%=session.getAttribute("LOGINID") %> COS</a></div>
+        <div class="pms2"><a href="/Cos/login/logout.jsp">로그아웃</a></div>
         <div class="pms2"><a href="wishlist.html">위시리스트</a></div>
         <div class="pms2"><a href="cart.html">장바구니</a></div>
       </div>
     </div>
   </div>
+
+  
   <div id="main">
-    <div class="mainimg">
-      <div class="micon1">
-        <div class="micon2"><a href="new_arrivals.html">New arrivals</a></div>
-        <div class="micon3"><a href="new_arrivals.html">새로운 분위기의 겨울 신상품</a></div>
-        <div class="mimgbtn1"><a href="new_arrivals.html">여성 신상품</a></div>
-      <div class="mimgbtn1"><a href="new_arrivals.html">남성 신상품</a></div>
-      </div>
-    </div>
-    <div class="ma1">
-      <div class="macon">
-        <div class="mabtn1"><a href="sale.html">여성복 쇼핑하기</a></div>
-        <div class="mabtn1"><a href="sale.html">남성복 쇼핑하기</a></div>
-      </div>
-    </div>
-  </div>
-  <div id="banner">
-    <div class="ban1">
-      <div class="bacon">The Knitwear refresh</div>
-      <div class="bacon2">겨울 시즌 무드를 더해 줄 니트웨어
-      </div>
-      <div class="babtn"><a href="women.html">여성 니트웨어</a></div>
-      <div class="babtn"><a href="men.html">남성 니트웨어</a></div>
-    </div>
-    <div class="ban2">
-      <div class="banimg"></div>
-      <div class="baninfo"><a href="women.html">여성 니트웨어</a></div>
+    <div class="join">
+     <form name="fr" method="post" action="login.jsp" onsubmit="return check();">
+      <table width="420" height="400" border="0" cellpadding="3" cellspacing="2" id="jointable">
+        <tr>
+          <td height="70" colspan="2"><strong>관리자 화면</strong></td>
+        </tr>
+        <tr>
+          <td height="50">상품 등록</td>
+          <td><input type="text" name="memberId" id="id" /></td>
+        </tr>
+        <tr>
+          <td width="81" height="50">상품수정</td>
+          <td><input type="password" name="password" id="password" /></td>
+        </tr>
+        <tr>
+          <td width="81" height="50">상품삭제</td>
+          <td><input type="password" name="password" id="password" /></td>
+        </tr>
+        <tr>
+          <td width="81" height="50">상품리스트</td>
+          <td><input type="password" name="password" id="password" /></td>
+        </tr>
+        <tr>
+          <td height="80" colspan="2">
+          <input type="image" name="logbtn" id="logbtn" src="/Cos/cos/images/main/logbtn.jpg" />
+          </td>
+        </tr>
+      </table>
+     </form>
     </div>
   </div>
   <div class="tedul"></div>

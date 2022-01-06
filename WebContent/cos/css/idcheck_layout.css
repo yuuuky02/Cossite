@@ -1,0 +1,73 @@
+@charset "utf-8";
+.idcheck {
+	height: auto;
+	width: 500px;
+}
+.con1 {
+	height: 60px;
+	width: 500px;
+	background-color: #171717;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+}
+.con2 {
+	height: 50px;
+	width: 470px;
+	font-family: "맑은 고딕";
+	font-size: 24px;
+	padding-top: 10px;
+	padding-left: 30px;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFFFFF;
+	display: block;
+	background-color: #E4E4E4;
+}
+.close {
+	float: right;
+	height: 41px;
+	width: 42px;
+	margin-right: 10px;
+	margin-top:10px;
+}
+.conmess {
+	font-size: 25px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-left: 30px;
+	color: #FFFFFF;
+	font-family: "맑은 고딕";
+	float: left;
+}
+.okbtn {
+	float: right;
+	width: 60px;
+	height: 40px;
+	margin-right: 10px;
+}
+#memberId {
+	width: 200px;
+	height: 35px;
+	float: left;
+	margin-left: 30px;
+	margin-top: 0px;
+	border: 1px solid #E4E4E4;
+}
+.con2id {
+	float: left;
+	height: 35px;
+	width: 40px;
+	color: #1B1B1B;
+}
+.iduse_btn {
+	color: #333;
+	background-color: #FFF;
+	border: 1px solid #E4E4E4;
+	text-align: center;
+	height: 30px;
+	width:150px;
+	font-size: 18px;
+	float: right;
+	margin-right: 10px;
+}
