@@ -1,0 +1,211 @@
+@charset "utf-8";
+body {
+	font-family: "맑은 고딕";
+}
+#wrap {
+	clear: both;
+	height: auto;
+	width: 1722px;
+	margin-top: 0px;
+}
+#page_header {
+	clear: both;
+	height: 82px;
+	width: 1722px;
+	margin-top: 0px;
+	float: left;
+}
+.phead {
+	clear: both;
+	float: left;
+	height: 82px;
+	width: 1722px;
+	margin-top: 0px;
+	position: fixed;
+	background-color: #FFF;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	top: 0px;
+}
+.logo {
+	font-size: 55px;
+	float: left;
+	height: 82px;
+	width: 130px;
+	color: #000;
+	text-align: center;
+	font-weight: bolder;
+}
+.logo a {
+	color: #000;
+	text-decoration: none;
+}
+.logo a: hover {
+	color: #000;
+	text-decoration: none;
+}
+.psmenu {
+	float: right;
+	height: 82px;
+	width: 450px;
+	font-weight: normal;
+	color: #1B1B1B;
+	font-size: 15px;
+}
+.pms2 {
+	float: left;
+	height: 52px;
+	width: auto;
+	padding-top: 30px;
+	padding-right: 12px;
+	padding-left: 12px;
+}
+.psmenu a {
+	color: #1B1B1B;
+	text-decoration: none;
+}
+.pms2 a:hover {
+	color: #6200C4;
+	text-decoration: none;
+}
+#main {
+	clear: both;
+	height: auto;
+	width: 1722px;
+}
+#banner {
+	clear: both;
+	float: left;
+	height: 775px;
+	width: 1676px;
+	margin-left: 34px;
+}
+#footer {
+	clear: both;
+	float: left;
+	height: 307px;
+	width: 1722px;
+	background-image: url(images/main/footer.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+.tedul {
+	clear: both;
+	height: 100px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCC;
+	width: 1676px;
+	margin-left: 23px;
+	margin-top: 100px;
+}
+.babtn a {
+	color: #FFF;
+	text-decoration: none;
+}
+#page_secon {
+	clear: both;
+	float: left;
+	height: 220px;
+	width: 1676px;
+	margin-left: 23px;
+	text-align: center;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+}
+.title {
+	clear: both;
+	height: 51px;
+	width: 300px;
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 688px;
+	font-size: 40px;
+	font-weight: bolder;
+	color: #000;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.cate {
+	clear: both;
+	height: 50px;
+	width: auto;
+	padding-top: 20px;
+}
+.ca1 {
+	color: #000;
+	background-color: #FFF;
+	height: 50px;
+	width: auto;
+}
+.ca1 a {
+	color: #000;
+	background-color: #FFF;
+	text-decoration: none;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	border: 1px solid #000;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 20px;
+}
+.ca1 a:hover {
+	color: #FFF;
+	background-color: #000;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+	font-size: 20px;
+}
+.ma1 {
+	clear: both;
+	float: left;
+	height: 100px;
+	width: 1676px;
+	margin-left: 34px;
+}
+.category {
+	float: right;
+	height: 64px;
+	width: 176px;
+	text-align: right;
+	color: #000;
+	margin-right: 20px;
+}
+#category {
+	float: right;
+	font-size: 18px;
+	width: 176px;
+	margin-top: 20px;
+	background-color: #F5F5F5;
+	color: #000;
+	font-family: "맑은 고딕";
+	border: 1px solid #f5f5f5;
+	list-style-position: outside;
+}
+.ban1 {
+	float: left;
+	height: 742px;
+	width: 398px;
+	margin-right: 21px;
+}
+.banimg {
+	float: left;
+	height: 597px;
+	width: 398px;
+	margin-top: 0px;
+}
+.baninfo {
+	float: left;
+	height: 145px;
+	width: 398px;
+	margin-bottom: 0px;
+}

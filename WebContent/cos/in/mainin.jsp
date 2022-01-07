@@ -15,7 +15,7 @@
 <div id="wrap">
   <div id="page_header">
     <div class="phead">
-      <div class="logo"><a href="/Cos/cos/main.html">cos</a></div>
+      <div class="logo"><a href="/Cos/cos/in/mainin.jsp">cos</a></div>
       <ul id="MenuBar1" class="MenuBarHorizontal">
         <li><a class="MenuBarItemSubmenu" href="sale.html">Sale</a>
           <ul>
@@ -32,17 +32,17 @@
         <li><a class="MenuBarItemSubmenu" href="women.html">Women</a>
           <ul>
             <li><a href="women.html">모두보기</a></li>
-            <li><a href="women.html">가디건</a></li>
-            <li><a href="women.html">스웨터</a></li>
-            <li><a href="women.html">베스트</a></li>
+            <li><a href="women.html">니트웨어</a></li>
+            <li><a href="women.html">아우터웨어</a></li>
+            <li><a href="women.html">드레스</a></li>
           </ul>
         </li>
         <li><a href="men.html" class="MenuBarItemSubmenu">Men</a>
           <ul>
             <li><a href="men.html">모두보기</a></li>
-            <li><a href="men.html">가디건</a></li>
-            <li><a href="men.html">스웨터</a></li>
-            <li><a href="men.html">베스트</a></li>
+            <li><a href="men.html">니트웨어</a></li>
+            <li><a href="men.html">아우터웨어</a></li>
+            <li><a href="men.html">트라우저</a></li>
           </ul>
         </li>
         <li><a href="sustain.html" class="MenuBarItemSubmenu">Sustainability</a>

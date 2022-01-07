@@ -1,12 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.sql.*,my.util.*,my.dao.*,my.model.*,java.util.*" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Cos_main</title>
-<link href="/Cos/cos/css/login_layout.css" rel="stylesheet" type="text/css" />
+<link href="/Cos/cos/css/listproduct_layout.css" rel="stylesheet" type="text/css" />
 <link href="/Cos/cos/SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
 <script src="/Cos/cos/SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
 </head>
@@ -21,7 +22,7 @@
           <ul>
             <li><a href="sale.html">Women's sale</a></li>
             <li><a href="sale.html">Men's sale</a></li>
-          </ul>
+</ul>
         </li>
         <li><a href="new_arrivals.html" class="MenuBarItemSubmenu">New Arrivals</a>
           <ul>
@@ -32,20 +33,20 @@
         <li><a class="MenuBarItemSubmenu" href="women.html">Women</a>
           <ul>
             <li><a href="women.html">모두보기</a></li>
-            <li><a href="women.html">가디건</a></li>
-            <li><a href="women.html">스웨터</a></li>
-            <li><a href="women.html">베스트</a></li>
+            <li><a href="women.html">니트웨어</a></li>
+            <li><a href="women.html">아우터웨어</a></li>
+            <li><a href="women.html">드레스</a></li>
           </ul>
         </li>
         <li><a href="men.html" class="MenuBarItemSubmenu">Men</a>
           <ul>
             <li><a href="men.html">모두보기</a></li>
-            <li><a href="men.html">가디건</a></li>
-            <li><a href="men.html">스웨터</a></li>
-            <li><a href="men.html">베스트</a></li>
+            <li><a href="men.html">니트웨어</a></li>
+            <li><a href="men.html">아우터웨어</a></li>
+            <li><a href="men.html">트라우저</a></li>
           </ul>
         </li>
-        <li><a href="sustain.html" class="MenuBarItemSubmenu">Sustainability</a>
+<li><a href="sustain.html" class="MenuBarItemSubmenu">Sustainability</a>
           <ul>
             <li><a href="sustain.html">Our Mission</a></li>
           </ul>
@@ -60,31 +61,31 @@
       </div>
     </div>
   </div>
-
+  
+<%
+	int pid = Integer.parseInt(request.getParameter("pid"));
+	Connection conn = ConnectionProvider.getConnection();
+	List<Product> products = null;
+	try{
+		ProductDao dao = new ProductDao();
+		dao.deleteById(conn, pid);
+	}catch(SQLException e){}
+%>
   
   <div id="main">
-    <div class="join">
-      <table width="420" height="400" border="0" cellpadding="3" cellspacing="2" id="jointable">
+  	<div class="delete">
+      <table width="420" height="338" border="0" cellpadding="3" cellspacing="2" id="deletetable">
         <tr>
-          <td height="70" colspan="2"><strong>관리자 화면</strong></td>
+          <td height="70" colspan="4"><strong>상품 삭제</strong></td>
         </tr>
         <tr>
-          <td height="50" colspan="2"><div class="td1"><a href="/Cos/admin/uploadForm.jsp">상품등록</a></div></td>
+          <td height="60" colspan="4"><%=pid %> 번,</td>
         </tr>
         <tr>
-          <td height="50" colspan="2"><div class="td1"><a href="/Cos/admin/listProduct.jsp">상품정보조회</a></div></td>
+          <td height="60" colspan="4">상품이 삭제되었습니다.</td>
         </tr>
         <tr>
-          <td height="50" colspan="2"><div class="td1"><a href="saleView.jsp">판매내역조회</a></div></td>
-        </tr>
-        <tr>
-          <td height="50" colspan="2"><div class="td1"><a href="memberManaging.jsp">회원관리</a></div></td>
-        </tr>
-        <tr>
-          <td height="50" colspan="2"><div class="td1"><a href="bsManaging.jsp">게시판관리</a></div></td>
-        </tr>
-        <tr>
-          <td height="150" colspan="4"><a href="/Cos/cos/in/mainin.jsp"><img src="/Cos/cos/images/main/finish_btn.jpg" width="305" height="43" /></a></td>
+          <td height="125" colspan="4"><a href="/Cos/admin/listProduct.jsp"><img src="/Cos/cos/images/admin/list_btn.jpg" width="305" height="41" /></a></td>
         </tr>
       </table>
     </div>

@@ -1,12 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.sql.*,my.util.*,my.dao.*,my.model.*,java.util.*" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Cos_main</title>
-<link href="/Cos/cos/css/login_layout.css" rel="stylesheet" type="text/css" />
+<link href="/Cos/cos/css/listproduct_layout.css" rel="stylesheet" type="text/css" />
 <link href="/Cos/cos/SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
 <script src="/Cos/cos/SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
 </head>
@@ -21,7 +22,7 @@
           <ul>
             <li><a href="sale.html">Women's sale</a></li>
             <li><a href="sale.html">Men's sale</a></li>
-          </ul>
+</ul>
         </li>
         <li><a href="new_arrivals.html" class="MenuBarItemSubmenu">New Arrivals</a>
           <ul>
@@ -45,7 +46,7 @@
             <li><a href="men.html">베스트</a></li>
           </ul>
         </li>
-        <li><a href="sustain.html" class="MenuBarItemSubmenu">Sustainability</a>
+<li><a href="sustain.html" class="MenuBarItemSubmenu">Sustainability</a>
           <ul>
             <li><a href="sustain.html">Our Mission</a></li>
           </ul>
@@ -60,36 +61,70 @@
       </div>
     </div>
   </div>
-
+ 
+ <div id="main">
+    <div class="listp">
+<%
+	String pageNumberStr = request.getParameter("page");
+	int pageNumber = 1;
+	if (pageNumberStr != null){
+		pageNumber = Integer.parseInt(pageNumberStr);
+	}
+	ProductListView viewData = null;
+	List<Product> products = null;
+	Connection conn = ConnectionProvider.getConnection();
+	try{
+		ProductDao dao = new ProductDao();
+		viewData = dao.getProductList(pageNumber,conn);
+		products = viewData.getProductList();
+	}catch(SQLException e){}
+	finally{
+		JdbcUtil.close(conn);
+	}
+	if (products != null){
+%>
   
-  <div id="main">
-    <div class="join">
-      <table width="420" height="400" border="0" cellpadding="3" cellspacing="2" id="jointable">
+  
+      <table width="1200" height="257" border="0" cellpadding="3" cellspacing="1" id="listproduct">
         <tr>
-          <td height="70" colspan="2"><strong>관리자 화면</strong></td>
+          <td width="54" height="58" bgcolor="#3D3D3D"><strong>번호</strong></td>
+          <td width="202" bgcolor="#3D3D3D"><strong>상품명</strong></td>
+          <td width="168" bgcolor="#3D3D3D"><strong>상품가격</strong></td>
+          <td width="167" bgcolor="#3D3D3D"><strong>상품분류</strong></td>
+          <td width="236" bgcolor="#3D3D3D"><strong>출시일</strong></td>
+          <td width="118" bgcolor="#3D3D3D"><strong>상품이미지</strong></td>
+          <td width="90" bgcolor="#3D3D3D"><strong>수정</strong></td>
+          <td width="90" bgcolor="#3D3D3D"><strong>삭제</strong></td>
         </tr>
+       <c:forEach var="product" items="<%=products %>">
         <tr>
-          <td height="50" colspan="2"><div class="td1"><a href="/Cos/admin/uploadForm.jsp">상품등록</a></div></td>
+          <td height="100">${product.pid}</td>
+          <td>${product.pname}</td>
+          <td>${product.price}</td>
+          <td>${product.pcategory}</td>
+          <td>${product.pdate}</td>
+          <td><img src="/Cos/uploadImages/${product.pimage}" width="50" height="60"></td>
+          <td><input type="button" name="update_btn" id="updatebtn" value="수정" onclick="location.href='updateForm.jsp?pid=${product.pid}'"></td>
+          <td><input type="button" name="delete_btn" id="deletebtn" value="삭제" onclick="location.href='delete.jsp?pid=${product.pid}'"></td>
         </tr>
+       </c:forEach>
         <tr>
-          <td height="50" colspan="2"><div class="td1"><a href="/Cos/admin/listProduct.jsp">상품정보조회</a></div></td>
-        </tr>
-        <tr>
-          <td height="50" colspan="2"><div class="td1"><a href="saleView.jsp">판매내역조회</a></div></td>
-        </tr>
-        <tr>
-          <td height="50" colspan="2"><div class="td1"><a href="memberManaging.jsp">회원관리</a></div></td>
-        </tr>
-        <tr>
-          <td height="50" colspan="2"><div class="td1"><a href="bsManaging.jsp">게시판관리</a></div></td>
-        </tr>
-        <tr>
-          <td height="150" colspan="4"><a href="/Cos/cos/in/mainin.jsp"><img src="/Cos/cos/images/main/finish_btn.jpg" width="305" height="43" /></a></td>
+          <td colspan="8">
+        	<c:forEach var="i" begin="1" end="<%=viewData.getPageTotalCount() %>">
+        		<input type="button" value="${i}"
+        			onclick="location.href='listProduct.jsp?page=${i}'">
+        	</c:forEach>
+          </td>
         </tr>
       </table>
+
+<% } %>
     </div>
   </div>
-  <div class="tedul"></div>
+  <div class="tedul">
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  </div>
   <div id="footer"></div>
 </div>
 <script type="text/javascript">

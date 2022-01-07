@@ -1,35 +1,84 @@
 package my.model;
 
+import java.util.Date;
+
 public class Product {
-	private int productId;
-	private String name;
+	private int pid;
+	private String pname;
 	private int price;
-	private String maker;
+	private String pcategory;
+	private String pimage;
+	private Date pdate;
+	private int pcount;
 	
-	public int getProductId() {
-		return productId;
+	public Product() {}
+
+	public Product(int pid, String pname, int price, String pcategory, String pimage, Date pdate) {
+		super();
+		this.pid = pid;
+		this.pname = pname;
+		this.price = price;
+		this.pcategory = pcategory;
+		this.pimage = pimage;
+		this.pdate = pdate;
 	}
-	public void setProductId(int productId) {
-		this.productId = productId;
+
+	public int getPid() {
+		return pid;
 	}
-	public String getName() {
-		return name;
+
+	public void setPid(int pid) {
+		this.pid = pid;
 	}
-	public void setName(String name) {
-		this.name = name;
+
+	public String getPname() {
+		return pname;
 	}
+
+	public void setPname(String pname) {
+		this.pname = pname;
+	}
+
 	public int getPrice() {
 		return price;
 	}
+
 	public void setPrice(int price) {
 		this.price = price;
 	}
-	public String getMaker() {
-		return maker;
+
+	public String getPcategory() {
+		return pcategory;
 	}
-	public void setMaker(String maker) {
-		this.maker = maker;
-	} 
+
+	public void setPcategory(String pcategory) {
+		this.pcategory = pcategory;
+	}
+
+	public String getPimage() {
+		return pimage;
+	}
+
+	public void setPimage(String pimage) {
+		this.pimage = pimage;
+	}
+
+	public Date getPdate() {
+		return pdate;
+	}
+
+	public void setPdate(Date pdate) {
+		this.pdate = pdate;
+	}
+
+	public int getPcount() {
+		return pcount;
+	}
+
+	public void setPcount(int pcount) {
+		this.pcount = pcount;
+	}
+	
 	
 	
 

@@ -6,7 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Cos_main</title>
-<link href="/Cos/cos/css/login_layout.css" rel="stylesheet" type="text/css" />
+<link href="/Cos/cos/css/upload_layout.css" rel="stylesheet" type="text/css" />
 <link href="/Cos/cos/SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
 <script src="/Cos/cos/SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
 </head>
@@ -21,7 +21,7 @@
           <ul>
             <li><a href="sale.html">Women's sale</a></li>
             <li><a href="sale.html">Men's sale</a></li>
-          </ul>
+</ul>
         </li>
         <li><a href="new_arrivals.html" class="MenuBarItemSubmenu">New Arrivals</a>
           <ul>
@@ -32,20 +32,20 @@
         <li><a class="MenuBarItemSubmenu" href="women.html">Women</a>
           <ul>
             <li><a href="women.html">모두보기</a></li>
-            <li><a href="women.html">가디건</a></li>
-            <li><a href="women.html">스웨터</a></li>
-            <li><a href="women.html">베스트</a></li>
+            <li><a href="women.html">니트웨어</a></li>
+            <li><a href="women.html">아우터웨어</a></li>
+            <li><a href="women.html">드레스</a></li>
           </ul>
         </li>
         <li><a href="men.html" class="MenuBarItemSubmenu">Men</a>
           <ul>
             <li><a href="men.html">모두보기</a></li>
-            <li><a href="men.html">가디건</a></li>
-            <li><a href="men.html">스웨터</a></li>
-            <li><a href="men.html">베스트</a></li>
+            <li><a href="men.html">니트웨어</a></li>
+            <li><a href="men.html">아우터웨어</a></li>
+            <li><a href="men.html">트라우저</a></li>
           </ul>
         </li>
-        <li><a href="sustain.html" class="MenuBarItemSubmenu">Sustainability</a>
+<li><a href="sustain.html" class="MenuBarItemSubmenu">Sustainability</a>
           <ul>
             <li><a href="sustain.html">Our Mission</a></li>
           </ul>
@@ -60,33 +60,42 @@
       </div>
     </div>
   </div>
-
-  
   <div id="main">
-    <div class="join">
-      <table width="420" height="400" border="0" cellpadding="3" cellspacing="2" id="jointable">
+    <div class="upload">
+     <form action="upload.jsp" method="post" enctype="multipart/form-data" name="form1">
+      <table width="420" height="457" border="0" cellpadding="3" cellspacing="2" id="uploadtable">
         <tr>
-          <td height="70" colspan="2"><strong>관리자 화면</strong></td>
+          <td height="75" colspan="2"><strong>상품등록</strong></td>
         </tr>
         <tr>
-          <td height="50" colspan="2"><div class="td1"><a href="/Cos/admin/uploadForm.jsp">상품등록</a></div></td>
+          <td width="111" height="60">상품명</td>
+          <td width="291" id="uploadtable"><input type="text" name="pname" id="product" /></td>
         </tr>
         <tr>
-          <td height="50" colspan="2"><div class="td1"><a href="/Cos/admin/listProduct.jsp">상품정보조회</a></div></td>
+          <td width="111" height="60">상품가격</td>
+          <td id="uploadtable"><input type="text" name="price" id="product" /></td>
         </tr>
         <tr>
-          <td height="50" colspan="2"><div class="td1"><a href="saleView.jsp">판매내역조회</a></div></td>
+          <td width="111" height="60">상품종류</td>
+          <td id="uploadtable"><select name="pcategory" id="product">
+            <option value="니트웨어" selected="selected">니트웨어</option>
+            <option value="아우터웨어">아우터웨어</option>
+            <option value="드레스">드레스</option>
+            <option value="트라우저">트라우저</option>
+          </select></td>
         </tr>
         <tr>
-          <td height="50" colspan="2"><div class="td1"><a href="memberManaging.jsp">회원관리</a></div></td>
+          <td width="111" height="60">상품이미지</td>
+          <td id="uploadtable"><input type="file" name="pimage" id="pimage" /></td>
         </tr>
         <tr>
-          <td height="50" colspan="2"><div class="td1"><a href="bsManaging.jsp">게시판관리</a></div></td>
-        </tr>
-        <tr>
-          <td height="150" colspan="4"><a href="/Cos/cos/in/mainin.jsp"><img src="/Cos/cos/images/main/finish_btn.jpg" width="305" height="43" /></a></td>
+          <td height="118" colspan="2"><p>
+            <input type="submit" name="yes" id="yes" value="" /> 
+            <input type="reset" name="no" id="no" value="" />
+          </p></td>
         </tr>
       </table>
+     </form>
     </div>
   </div>
   <div class="tedul"></div>

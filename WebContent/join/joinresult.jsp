@@ -76,7 +76,7 @@
     <div class="join">
       <table width="420" height="558" border="0" cellpadding="3" cellspacing="2" id="jointable">
         <tr>
-          <td height="70" colspan="4"><strong> 회원가입</strong></td>
+          <td height="70" colspan="4"><strong>회원가입</strong></td>
         </tr>
         <tr>
           <td height="60" colspan="4"><div class="jotd">

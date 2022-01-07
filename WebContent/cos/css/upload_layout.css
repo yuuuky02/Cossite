@@ -93,10 +93,10 @@ body {
 	margin-left: 23px;
 	margin-top: 100px;
 }
-.join {
+.upload {
 	clear: both;
 	float: left;
-	height: 500px;
+	height: 480px;
 	width: 420px;
 	margin-top: 100px;
 	margin-left: 651px;
@@ -104,85 +104,58 @@ body {
 	border: 1px solid #CCC;
 	text-align:center;
 }
-.admin {
-	clear: both;
-	float: left;
-	height: 400px;
-	width: 420px;
-	margin-top: 100px;
-	margin-left: 651px;
-	margin-bottom: 100px;
-	border: 1px solid #CCC;
-	text-align:center;
-}
-#jointable tr td strong {
+#uploadtable tr td strong {
 	font-family: "맑은 고딕";
 	font-size: 28px;
 	color: #666;
 }
-#jointable {
+#uploadtable {
 	text-align: center;
 	color: #333;
 }
-#id {
+#product {
 	font-size: 18px;
 	color: #333333;
 	float: left;
 	clear: both;
 	width: 190px;
 	height: 30px;
-	margin-top: 10px;
+	margin-top: 5px;
 	margin-left: 20px;
 	background-color: #F2F2F2;
 	border: 1px solid #F2F2F2;
 	font-weight: normal;
 }
-#password {
-	font-size: 18px;
-	color: #333333;
-	float: left;
-	clear: both;
+#pimage {
 	width: 190px;
-	height: 30px;
-	margin-top: 10px;
 	margin-left: 20px;
-	background-color: #F2F2F2;
-	border: 1px solid #F2F2F2;
-	font-weight: normal;
+	float: left;
+	color: #333333;
+	height: 30px;
+	border: 1px solid #f2f2f2;
+	background-color: #f2f2f2;
 }
-.lotd {
-	color: #666;
-	text-align: center;
-	float: right;
-	height: 33px;
+#yes {
+	background-image: url(/Cos/cos/images/admin/upload_btn.jpg);
+	height: 41px;
 	width: 150px;
-	padding-top: 7px;
 }
-.lotd a {
-	color: #666;
-	text-decoration: none;
-}
-.lotd a:hover {
-	color: #6200C4;
-	text-decoration: overline;
+#no {
+	margin-left: 20px;
+	background-image: url(/Cos/cos/images/admin/cancel_btn.jpg);
+	height: 41px;
+	width: 150px;
 }
 .td1 {
-	font-size: 20px;
+	font-size: 18px;
 	color: #333;
 	background-color: #f2f2f2;
-	clear: both;
 	float: left;
-	height: 35px;
-	width: 190px;
-	padding-top: 5px;
-	margin-top: 10px;
-	margin-left: 115px;
+	clear: both;
+	width: 195px;
+	height: 30px;
+	padding-top: 4px;
+	margin-top: 5px;
+	margin-left: 20px;
 	border: 1px solid #f2f2f2;
-}
-.td1 a {
-	color: #000;
-	text-decoration: none;
-}
-.td1 a:hover {
-	color: #6200C4;
 }

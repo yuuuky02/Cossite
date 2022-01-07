@@ -71,7 +71,8 @@
   				document.fr.email.value == "" || document.fr.email.value.length < 0 ||
   				document.fr.number.value == "" || document.fr.number.value.length < 0){
   			alert("입력되지 않은 정보가 있습니다. 모두 입력해주세요.")
-  			history.back()
+  			history.go(0);
+  			//history.back()
   			document.fr.memberId.focus();
   			return false;
   		}
