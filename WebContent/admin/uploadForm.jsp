@@ -31,17 +31,17 @@
         </li>
         <li><a class="MenuBarItemSubmenu" href="women.html">Women</a>
           <ul>
-            <li><a href="women.html">모두보기</a></li>
-            <li><a href="women.html">니트웨어</a></li>
             <li><a href="women.html">아우터웨어</a></li>
+            <li><a href="women.html">니트웨어</a></li>
+            <li><a href="women.html">셔츠</a></li>
             <li><a href="women.html">드레스</a></li>
           </ul>
         </li>
         <li><a href="men.html" class="MenuBarItemSubmenu">Men</a>
           <ul>
-            <li><a href="men.html">모두보기</a></li>
-            <li><a href="men.html">니트웨어</a></li>
             <li><a href="men.html">아우터웨어</a></li>
+            <li><a href="men.html">니트웨어</a></li>
+            <li><a href="men.html">셔츠</a></li>
             <li><a href="men.html">트라우저</a></li>
           </ul>
         </li>
@@ -76,12 +76,42 @@
           <td id="uploadtable"><input type="text" name="price" id="product" /></td>
         </tr>
         <tr>
-          <td width="111" height="60">상품종류</td>
+          <td width="111" height="60">성별</td>
+          <td id="uploadtable">
+            <p>
+              <label>
+                <input name="pgender" type="radio" id="pgender_0" value="여" checked="checked" />
+                여성</label>
+              <label>
+                <input type="radio" name="pgender" value="남" id="pgender_1" />
+                남성</label>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td width="111" height="60">상품분류</td>
           <td id="uploadtable"><select name="pcategory" id="product">
             <option value="니트웨어" selected="selected">니트웨어</option>
             <option value="아우터웨어">아우터웨어</option>
             <option value="드레스">드레스</option>
             <option value="트라우저">트라우저</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td width="111" height="60">상품종류</td>
+          <td id="uploadtable"><select name="psort" id="product">
+            <option value="재킷" selected="selected">재킷</option>
+            <option value="코트">코트</option>
+            <option value="가디건">가디건</option>
+            <option value="베스트">베스트</option>
+            <option value="블라우스">블라우스</option>
+            <option value="셔츠 드레스">셔츠 드레스</option>
+            <option value="셔츠 재킷">셔츠 재킷</option>
+            <option value="릭랙스드 핏 셔츠">릭랙스드 핏 셔츠</option>
+            <option value="니트 드레스">니트 드레스</option>
+            <option value="슬리브리스 드레스">슬리브리스 드레스</option>
+            <option value="레귤러 핏 트라우저">레귤러 핏 트라우저</option>
+            <option value="릭랙스드 핏 트라우저">릭랙스드 핏 트라우저</option>
           </select></td>
         </tr>
         <tr>

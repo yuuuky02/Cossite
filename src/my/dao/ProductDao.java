@@ -20,15 +20,17 @@ public class ProductDao {
       PreparedStatement pstmt=null; 
       try {
          pstmt = conn.prepareStatement
-         ("insert into product (pname,price,pcategory,pimage,pdate,pcount)"
-               + " values(?,?,?,?,?,?)");
+         ("insert into product (pname,price,pgender,pcategory,psort,pimage,pdate,pcount)"
+               + " values(?,?,?,?,?,?,?,?)");
          pstmt.setString(1, product.getPname());
          pstmt.setInt(2, product.getPrice());
-         pstmt.setString(3, product.getPcategory());
-         pstmt.setString(4, product.getPimage());
-         pstmt.setTimestamp(5, 
+         pstmt.setString(3, product.getPgender());
+         pstmt.setString(4, product.getPcategory());
+         pstmt.setString(5, product.getPsort());
+         pstmt.setString(6, product.getPimage());
+         pstmt.setTimestamp(7, 
                  new Timestamp(product.getPdate().getTime()));
-         pstmt.setInt(6, 0);
+         pstmt.setInt(8, 0);
          pstmt.executeUpdate(); 
       } catch (SQLException e){
          e.printStackTrace();
@@ -53,10 +55,12 @@ public class ProductDao {
             product.setPid(rs.getInt(1));
             product.setPname(rs.getString(2));
             product.setPrice(rs.getInt(3));
-            product.setPcategory(rs.getString(4));
-            product.setPimage(rs.getString(5));
-            product.setPdate(rs.getTimestamp(6));
-            product.setPcount(rs.getInt(7));
+            product.setPgender(rs.getString(4));
+            product.setPcategory(rs.getString(5));
+            product.setPsort(rs.getString(6));
+            product.setPimage(rs.getString(7));
+            product.setPdate(rs.getTimestamp(8));
+            product.setPcount(rs.getInt(9));
          }
       } catch (SQLException e){
          e.printStackTrace();
@@ -86,10 +90,12 @@ public class ProductDao {
             product.setPid(rs.getInt(1));
             product.setPname(rs.getString(2));
             product.setPrice(rs.getInt(3));
-            product.setPcategory(rs.getString(4));
-            product.setPimage(rs.getString(5));
-            product.setPdate(rs.getTimestamp(6));
-            product.setPcount(rs.getInt(7));
+            product.setPgender(rs.getString(4));
+            product.setPcategory(rs.getString(5));
+            product.setPsort(rs.getString(6));
+            product.setPimage(rs.getString(7));
+            product.setPdate(rs.getTimestamp(8));
+            product.setPcount(rs.getInt(9));
             products.add(product);
          }
       } catch (SQLException e){
@@ -117,10 +123,12 @@ public class ProductDao {
                product.setPid(rs.getInt(1));
                product.setPname(rs.getString(2));
                product.setPrice(rs.getInt(3));
-               product.setPcategory(rs.getString(4));
-               product.setPimage(rs.getString(5));
-               product.setPdate(rs.getTimestamp(6));
-               product.setPcount(rs.getInt(7));
+               product.setPgender(rs.getString(4));
+               product.setPcategory(rs.getString(5));
+               product.setPsort(rs.getString(6));
+               product.setPimage(rs.getString(7));
+               product.setPdate(rs.getTimestamp(8));
+               product.setPcount(rs.getInt(9));
                products.add(product);
             }
          } catch (SQLException e){
@@ -139,14 +147,16 @@ public class ProductDao {
       PreparedStatement pstmt=null; 
       try {
          pstmt = conn.prepareStatement
-         ("update product set pname=?,price=?,pcategory=?, "
-               + "   pimage=?,pdate=? where pid=?");
+         ("update product set pname=?,price=?,pgender=?,pcategory=?, "
+               + "   psort=?,pimage=?,pdate=? where pid=?");
          pstmt.setString(1, product.getPname());
          pstmt.setInt(2, product.getPrice());
-         pstmt.setString(3, product.getPcategory());
-         pstmt.setString(4, product.getPimage());
-         pstmt.setTimestamp(5, new Timestamp(product.getPdate().getTime()));
-         pstmt.setInt(6, product.getPid());
+         pstmt.setString(3, product.getPgender());
+         pstmt.setString(4, product.getPcategory());
+         pstmt.setString(5, product.getPsort());
+         pstmt.setString(6, product.getPimage());
+         pstmt.setTimestamp(7, new Timestamp(product.getPdate().getTime()));
+         pstmt.setInt(8, product.getPid());
          
          pstmt.executeUpdate(); 
       } catch (SQLException e){
@@ -217,10 +227,12 @@ public class ProductDao {
             product.setPid(rs.getInt(1));
             product.setPname(rs.getString(2));
             product.setPrice(rs.getInt(3));
-            product.setPcategory(rs.getString(4));
-            product.setPimage(rs.getString(5));
-            product.setPdate(rs.getTimestamp(6));
-            product.setPcount(rs.getInt(7));
+            product.setPgender(rs.getString(4));
+            product.setPcategory(rs.getString(5));
+            product.setPsort(rs.getString(6));
+            product.setPimage(rs.getString(7));
+            product.setPdate(rs.getTimestamp(8));
+            product.setPcount(rs.getInt(9));
             productList.add(product);
          }
       } finally {
@@ -246,10 +258,12 @@ public class ProductDao {
             product.setPid(rs.getInt(1));
             product.setPname(rs.getString(2));
             product.setPrice(rs.getInt(3));
-            product.setPcategory(rs.getString(4));
-            product.setPimage(rs.getString(5));
-            product.setPdate(rs.getTimestamp(6));
-            product.setPcount(rs.getInt(7));
+            product.setPgender(rs.getString(4));
+            product.setPcategory(rs.getString(5));
+            product.setPsort(rs.getString(6));
+            product.setPimage(rs.getString(7));
+            product.setPdate(rs.getTimestamp(8));
+            product.setPcount(rs.getInt(9));
             productList.add(product);
          }
       } finally {
@@ -275,10 +289,12 @@ public class ProductDao {
             product.setPid(rs.getInt(1));
             product.setPname(rs.getString(2));
             product.setPrice(rs.getInt(3));
-            product.setPcategory(rs.getString(4));
-            product.setPimage(rs.getString(5));
-            product.setPdate(rs.getTimestamp(6));
-            product.setPcount(rs.getInt(7));
+            product.setPgender(rs.getString(4));
+            product.setPcategory(rs.getString(5));
+            product.setPsort(rs.getString(6));
+            product.setPimage(rs.getString(7));
+            product.setPdate(rs.getTimestamp(8));
+            product.setPcount(rs.getInt(9));
             productList.add(product);
          }
       } finally {
@@ -304,10 +320,12 @@ public class ProductDao {
                product.setPid(rs.getInt(1));
                product.setPname(rs.getString(2));
                product.setPrice(rs.getInt(3));
-               product.setPcategory(rs.getString(4));
-               product.setPimage(rs.getString(5));
-               product.setPdate(rs.getTimestamp(6));
-               product.setPcount(rs.getInt(7));
+               product.setPgender(rs.getString(4));
+               product.setPcategory(rs.getString(5));
+               product.setPsort(rs.getString(6));
+               product.setPimage(rs.getString(7));
+               product.setPdate(rs.getTimestamp(8));
+               product.setPcount(rs.getInt(9));
                productList.add(product);
             }
          } finally {
@@ -366,10 +384,12 @@ public class ProductDao {
             product.setPid(rs.getInt(1));
             product.setPname(rs.getString(2));
             product.setPrice(rs.getInt(3));
-            product.setPcategory(rs.getString(4));
-            product.setPimage(rs.getString(5));
-            product.setPdate(rs.getTimestamp(6));
-            product.setPcount(rs.getInt(7));
+            product.setPgender(rs.getString(4));
+            product.setPcategory(rs.getString(5));
+            product.setPsort(rs.getString(6));
+            product.setPimage(rs.getString(7));
+            product.setPdate(rs.getTimestamp(8));
+            product.setPcount(rs.getInt(9));
             list.add(product);
          }
       } catch (SQLException e){

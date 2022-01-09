@@ -6,19 +6,24 @@ public class Product {
 	private int pid;
 	private String pname;
 	private int price;
+	private String pgender;
 	private String pcategory;
+	private String psort;
 	private String pimage;
 	private Date pdate;
 	private int pcount;
 	
 	public Product() {}
 
-	public Product(int pid, String pname, int price, String pcategory, String pimage, Date pdate) {
+	public Product(int pid, String pname, int price, String pgender, String pcategory, String psort, String pimage,
+			Date pdate) {
 		super();
 		this.pid = pid;
 		this.pname = pname;
 		this.price = price;
+		this.pgender = pgender;
 		this.pcategory = pcategory;
+		this.psort = psort;
 		this.pimage = pimage;
 		this.pdate = pdate;
 	}
@@ -47,12 +52,28 @@ public class Product {
 		this.price = price;
 	}
 
+	public String getPgender() {
+		return pgender;
+	}
+
+	public void setPgender(String pgender) {
+		this.pgender = pgender;
+	}
+
 	public String getPcategory() {
 		return pcategory;
 	}
 
 	public void setPcategory(String pcategory) {
 		this.pcategory = pcategory;
+	}
+
+	public String getPsort() {
+		return psort;
+	}
+
+	public void setPsort(String psort) {
+		this.psort = psort;
 	}
 
 	public String getPimage() {
@@ -77,9 +98,7 @@ public class Product {
 
 	public void setPcount(int pcount) {
 		this.pcount = pcount;
-	}
-	
-	
+	}	
 	
 
 }

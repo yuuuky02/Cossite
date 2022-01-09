@@ -35,17 +35,17 @@
         </li>
         <li><a class="MenuBarItemSubmenu" href="women.html">Women</a>
           <ul>
-            <li><a href="women.html">모두보기</a></li>
-            <li><a href="women.html">니트웨어</a></li>
             <li><a href="women.html">아우터웨어</a></li>
+            <li><a href="women.html">니트웨어</a></li>
+            <li><a href="women.html">셔츠</a></li>
             <li><a href="women.html">드레스</a></li>
           </ul>
         </li>
         <li><a href="men.html" class="MenuBarItemSubmenu">Men</a>
           <ul>
-            <li><a href="men.html">모두보기</a></li>
-            <li><a href="men.html">니트웨어</a></li>
             <li><a href="men.html">아우터웨어</a></li>
+            <li><a href="men.html">니트웨어</a></li>
+            <li><a href="men.html">셔츠</a></li>
             <li><a href="men.html">트라우저</a></li>
           </ul>
         </li>
@@ -72,7 +72,9 @@
   	
   	String pname="";
   	int price=0;
+  	String pgender="";
   	String pcategory="";
+  	String psort="";
   	String pimage="";
   	MultipartRequest multi=null;
   	
@@ -80,11 +82,13 @@
   		multi = new MultipartRequest(request,uploadPath,maxSize,"utf-8",new DefaultFileRenamePolicy());
   		pname = multi.getParameter("pname");
   		price = Integer.parseInt(multi.getParameter("price"));
+  		pgender = multi.getParameter("pgender");
   		pcategory = multi.getParameter("pcategory");
+  		psort = multi.getParameter("psort");
   		pimage = multi.getFilesystemName("pimage");
   		Connection conn = ConnectionProvider.getConnection();
   		ProductDao dao = new ProductDao();
-  		Product product = new Product(0, pname, price, pcategory, pimage, new java.util.Date());
+  		Product product = new Product(0, pname, price, pgender, pcategory, psort, pimage, new java.util.Date());
   		dao.insert(conn, product);
   	}catch(Exception e){}
 %>
@@ -104,8 +108,16 @@
           <td id="uploadtable"><div class="td1"><%=price %></div></td>
         </tr>
         <tr>
-          <td width="111" height="60">상품종류</td>
+          <td width="111" height="60">성별</td>
+          <td id="uploadtable"><div class="td1"><%=pgender %></div></td>
+        </tr>
+        <tr>
+          <td width="111" height="60">상품분류</td>
           <td id="uploadtable"><div class="td1"><%=pcategory %></div></td>
+        </tr>
+        <tr>
+          <td width="111" height="60">상품종류</td>
+          <td id="uploadtable"><div class="td1"><%=psort %></div></td>
         </tr>
         <tr>
           <td width="111" height="60">상품이미지</td>

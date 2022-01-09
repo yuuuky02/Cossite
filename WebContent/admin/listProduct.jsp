@@ -32,18 +32,18 @@
         </li>
         <li><a class="MenuBarItemSubmenu" href="women.html">Women</a>
           <ul>
-            <li><a href="women.html">모두보기</a></li>
-            <li><a href="women.html">가디건</a></li>
-            <li><a href="women.html">스웨터</a></li>
-            <li><a href="women.html">베스트</a></li>
+            <li><a href="women.html">아우터웨어</a></li>
+            <li><a href="women.html">니트웨어</a></li>
+            <li><a href="women.html">셔츠</a></li>
+            <li><a href="women.html">드레스</a></li>
           </ul>
         </li>
         <li><a href="men.html" class="MenuBarItemSubmenu">Men</a>
           <ul>
-            <li><a href="men.html">모두보기</a></li>
-            <li><a href="men.html">가디건</a></li>
-            <li><a href="men.html">스웨터</a></li>
-            <li><a href="men.html">베스트</a></li>
+            <li><a href="men.html">아우터웨어</a></li>
+            <li><a href="men.html">니트웨어</a></li>
+            <li><a href="men.html">셔츠</a></li>
+            <li><a href="men.html">드레스</a></li>
           </ul>
         </li>
 <li><a href="sustain.html" class="MenuBarItemSubmenu">Sustainability</a>
@@ -85,14 +85,16 @@
 %>
   
   
-      <table width="1200" height="257" border="0" cellpadding="3" cellspacing="1" id="listproduct">
+      <table width="1500" height="257" border="0" cellpadding="3" cellspacing="1" id="listproduct">
         <tr>
-          <td width="54" height="58" bgcolor="#3D3D3D"><strong>번호</strong></td>
-          <td width="202" bgcolor="#3D3D3D"><strong>상품명</strong></td>
-          <td width="168" bgcolor="#3D3D3D"><strong>상품가격</strong></td>
-          <td width="167" bgcolor="#3D3D3D"><strong>상품분류</strong></td>
-          <td width="236" bgcolor="#3D3D3D"><strong>출시일</strong></td>
-          <td width="118" bgcolor="#3D3D3D"><strong>상품이미지</strong></td>
+          <td width="55" height="58" bgcolor="#3D3D3D"><strong>번호</strong></td>
+          <td width="315" bgcolor="#3D3D3D"><strong>상품명</strong></td>
+          <td width="143" bgcolor="#3D3D3D"><strong>상품가격</strong></td>
+          <td width="68" bgcolor="#3D3D3D"><strong>성별</strong></td>
+          <td width="161" bgcolor="#3D3D3D"><strong>상품분류</strong></td>
+          <td width="234" bgcolor="#3D3D3D"><strong>상품종류</strong></td>
+          <td width="150" bgcolor="#3D3D3D"><strong>출시일</strong></td>
+          <td width="123" bgcolor="#3D3D3D"><strong>상품이미지</strong></td>
           <td width="90" bgcolor="#3D3D3D"><strong>수정</strong></td>
           <td width="90" bgcolor="#3D3D3D"><strong>삭제</strong></td>
         </tr>
@@ -101,22 +103,22 @@
           <td height="100">${product.pid}</td>
           <td>${product.pname}</td>
           <td>${product.price}</td>
+          <td>${product.pgender}</td>
           <td>${product.pcategory}</td>
+          <td>${product.psort}</td>
           <td>${product.pdate}</td>
           <td><img src="/Cos/uploadImages/${product.pimage}" width="50" height="60"></td>
           <td><input type="button" name="update_btn" id="updatebtn" value="수정" onclick="location.href='updateForm.jsp?pid=${product.pid}'"></td>
           <td><input type="button" name="delete_btn" id="deletebtn" value="삭제" onclick="location.href='delete.jsp?pid=${product.pid}'"></td>
         </tr>
        </c:forEach>
-        <tr>
-          <td colspan="8">
-        	<c:forEach var="i" begin="1" end="<%=viewData.getPageTotalCount() %>">
-        		<input type="button" value="${i}"
-        			onclick="location.href='listProduct.jsp?page=${i}'">
-        	</c:forEach>
-          </td>
-        </tr>
       </table>
+      <div class="listbtn">
+      	<c:forEach var="i" begin="1" end="<%=viewData.getPageTotalCount() %>">
+        	<input type="button" value="${i}"
+        		onclick="location.href='listProduct.jsp?page=${i}'">
+        </c:forEach>
+      </div>
 
 <% } %>
     </div>
