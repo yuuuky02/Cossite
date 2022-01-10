@@ -13,6 +13,7 @@
 </head>
 
 <body>
+
 <div id="wrap">
   <div id="page_header">
     <div class="phead">
@@ -32,18 +33,18 @@
         </li>
         <li><a class="MenuBarItemSubmenu" href="/Cos/cos/women_p.html">Women</a>
           <ul>
-            <li><a href="/Cos/cos/women.jsp">모두보기</a></li>
-            <li><a href="/Cos/cos/women.jsp">가디건</a></li>
-            <li><a href="/Cos/cos/women.jsp">스웨터</a></li>
-            <li><a href="/Cos/cos/women.jsp">베스트</a></li>
+            <li><a href="/Cos/cos/women1.jsp?pgender=여&pcategory=아우터웨어">아우터웨어</a></li>
+            <li><a href="/Cos/cos/women2.jsp?pgender=여&pcategory=니트웨어">니트웨어</a></li>
+            <li><a href="/Cos/cos/women3.jsp?pgender=여&pcategory=셔츠">셔츠</a></li>
+            <li><a href="/Cos/cos/women4.jsp?pgender=여&pcategory=드레스">드레스</a></li>
           </ul>
         </li>
         <li><a href="/Cos/cos/men_p.html" class="MenuBarItemSubmenu">Men</a>
           <ul>
-            <li><a href="/Cos/cos/men.jsp">모두보기</a></li>
-            <li><a href="/Cos/cos/men.jsp">가디건</a></li>
-            <li><a href="/Cos/cos/men.jsp">스웨터</a></li>
-            <li><a href="/Cos/cos/men.jsp">베스트</a></li>
+            <li><a href="/Cos/cos/men1.jsp?pgender=남&pcategory=아우터웨어">아우터웨어</a></li>
+            <li><a href="/Cos/cos/men2.jsp?pgender=남&pcategory=니트웨어">니트웨어</a></li>
+            <li><a href="/Cos/cos/men3.jsp?pgender=남&pcategory=셔츠">셔츠</a></li>
+            <li><a href="/Cos/cos/men4.jsp?pgender=남&pcategory=트라우저">트라우저</a></li>
           </ul>
         </li>
 		<li><a href="sustain.html" class="MenuBarItemSubmenu">Sustainability</a>
@@ -61,13 +62,14 @@
       </div>
     </div>
   </div>
+    
   <div id="page_secon">
     <div class="title">니트웨어</div>
     <div class="cate">
       <div class="ca1">
-      	<a href="/Cos/cos/women.jsp">모두보기</a>
-      	<a href="/Cos/cos/women.jsp">가디건</a>
-      	<a href="/Cos/cos/women.jsp">베스트</a>
+      	<a href="/Cos/cos/women2.jsp?pgender=여">모두보기</a>
+      	<a href="/Cos/cos/women2.jsp?pcategory=니트웨어">가디건</a>
+      	<a href="/Cos/cos/women2.jsp?pcategory=니트웨어&psort=베스트">베스트</a>
       </div>
     </div>
   </div>
@@ -85,13 +87,17 @@
   </div>
   
 <%
+	//String pgender = request.getParameter("pgender");
   	String pcategory = request.getParameter("pcategory");
+  	String psort = request.getParameter("psort");
 	Connection conn = ConnectionProvider.getConnection();
 	List<Product> products = null;
 	
 	try{
 		ProductDao dao = new ProductDao();
-		products = dao.selectCategory(conn, pcategory);
+		//products = dao.selectGender(conn, pgender);
+		products = dao.selectCategory(conn, pcategory, psort);
+		//products = dao.selectSort(conn, psort);
 	}catch(SQLException e){}
 %>
   

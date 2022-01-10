@@ -107,7 +107,45 @@ public class ProductDao {
       }
       return products;
    }
-    public List<Product> selectCategory(Connection conn, String pcategory) 
+   
+   
+   public List<Product> selectGender(Connection conn, String pgender) 
+           throws SQLException {
+        PreparedStatement pstmt=null; 
+        ResultSet rs = null;
+        Product product = null; 
+        List<Product> products = new ArrayList<Product>();
+        try {
+           pstmt = conn.prepareStatement
+           ("select * from product where pgender=?");
+           pstmt.setString(1, pgender);
+           rs = pstmt.executeQuery();
+           while (rs.next()){
+              product = new Product(); 
+              product.setPid(rs.getInt(1));
+              product.setPname(rs.getString(2));
+              product.setPrice(rs.getInt(3));
+              product.setPgender(rs.getString(4));
+              product.setPcategory(rs.getString(5));
+              product.setPsort(rs.getString(6));
+              product.setPimage(rs.getString(7));
+              product.setPdate(rs.getTimestamp(8));
+              product.setPcount(rs.getInt(9));
+              products.add(product);
+           }
+        } catch (SQLException e){
+           e.printStackTrace();
+        } finally {
+           JdbcUtil.close(conn);
+           JdbcUtil.close(pstmt);
+           JdbcUtil.close(rs);
+        }
+        return products;
+     }
+   
+   
+   
+    public List<Product> selectCategory(Connection conn, String pcategory, String psort) 
             throws SQLException {
          PreparedStatement pstmt=null; 
          ResultSet rs = null;
@@ -115,8 +153,9 @@ public class ProductDao {
          List<Product> products = new ArrayList<Product>();
          try {
             pstmt = conn.prepareStatement
-            ("select * from product where pcategory=?");
+            ("select * from product where pcategory,psort=?");
             pstmt.setString(1, pcategory);
+            pstmt.setString(2, psort);
             rs = pstmt.executeQuery();
             while (rs.next()){
                product = new Product(); 
@@ -140,8 +179,9 @@ public class ProductDao {
          }
          return products;
       }
+  
 
-   
+  
    public void update(Connection conn, Product product) 
          throws SQLException {
       PreparedStatement pstmt=null; 
