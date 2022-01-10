@@ -16,13 +16,13 @@
 <div id="wrap">
   <div id="page_header">
     <div class="phead">
-      <div class="logo"><a href="main.html">cos</a></div>
+      <div class="logo"><a href="/Cos/cos/main.html">cos</a></div>
       <ul id="MenuBar1" class="MenuBarHorizontal">
         <li><a class="MenuBarItemSubmenu" href="sale.html">Sale</a>
           <ul>
             <li><a href="sale.html">Women's sale</a></li>
             <li><a href="sale.html">Men's sale</a></li>
-</ul>
+		  </ul>
         </li>
         <li><a href="new_arrivals.html" class="MenuBarItemSubmenu">New Arrivals</a>
           <ul>
@@ -30,23 +30,23 @@
             <li><a href="new_arrivals.html">Men: New Arrivals</a></li>
           </ul>
         </li>
-        <li><a class="MenuBarItemSubmenu" href="women.html">Women</a>
+        <li><a class="MenuBarItemSubmenu" href="/Cos/cos/women_p.html">Women</a>
           <ul>
-            <li><a href="women.jsp">모두보기</a></li>
-            <li><a href="women.jsp?pcategory=가디건">가디건</a></li>
-            <li><a href="women.jsp">스웨터</a></li>
-            <li><a href="women.jsp?pcategory=베스트">베스트</a></li>
+            <li><a href="/Cos/cos/women.jsp">모두보기</a></li>
+            <li><a href="/Cos/cos/women.jsp">가디건</a></li>
+            <li><a href="/Cos/cos/women.jsp">스웨터</a></li>
+            <li><a href="/Cos/cos/women.jsp">베스트</a></li>
           </ul>
         </li>
-        <li><a href="men.html" class="MenuBarItemSubmenu">Men</a>
+        <li><a href="/Cos/cos/men_p.html" class="MenuBarItemSubmenu">Men</a>
           <ul>
-            <li><a href="men.html">모두보기</a></li>
-            <li><a href="men.html">가디건</a></li>
-            <li><a href="men.html">스웨터</a></li>
-            <li><a href="men.html">베스트</a></li>
+            <li><a href="/Cos/cos/men.jsp">모두보기</a></li>
+            <li><a href="/Cos/cos/men.jsp">가디건</a></li>
+            <li><a href="/Cos/cos/men.jsp">스웨터</a></li>
+            <li><a href="/Cos/cos/men.jsp">베스트</a></li>
           </ul>
         </li>
-<li><a href="sustain.html" class="MenuBarItemSubmenu">Sustainability</a>
+		<li><a href="sustain.html" class="MenuBarItemSubmenu">Sustainability</a>
           <ul>
             <li><a href="sustain.html">Our Mission</a></li>
           </ul>
@@ -54,8 +54,8 @@
       </ul>
       <div class="psmenu">
         <div class="pms2"><a href="search.html">검색</a></div>
-        <div class="pms2">로그인</div>
-        <div class="pms2"><a href="joinForm.html">회원가입</a></div>
+        <div class="pms2"><a href="/Cos/login/loginForm.html">로그인</a></div>
+        <div class="pms2"><a href="/Cos/join/joinForm.html">회원가입</a></div>
         <div class="pms2"><a href="wishlist.html">위시리스트</a></div>
         <div class="pms2"><a href="cart.html">장바구니</a></div>
       </div>
@@ -64,7 +64,11 @@
   <div id="page_secon">
     <div class="title">니트웨어</div>
     <div class="cate">
-      <div class="ca1"><a href="women.jsp?pcategory=니트웨어">모두보기</a><a href="women.jsp?pcategory=가디건">가디건</a><a href="women.jsp?pcategory=베스트">베스트</a></div>
+      <div class="ca1">
+      	<a href="/Cos/cos/women.jsp">모두보기</a>
+      	<a href="/Cos/cos/women.jsp">가디건</a>
+      	<a href="/Cos/cos/women.jsp">베스트</a>
+      </div>
     </div>
   </div>
   <div id="main">

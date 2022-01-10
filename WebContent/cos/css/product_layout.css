@@ -85,7 +85,17 @@ body {
 	padding-top: 400px;
 	background-repeat: no-repeat;
 }
-
+.mainimg2 {
+	background-image: url(/Cos/cos/images/product/men.jpg);
+	clear: both;
+	height: 800px;
+	width: 1676px;
+	margin-left: 23px;
+	text-align: center;
+	padding-left: 639px;
+	padding-top: 400px;
+	background-repeat: no-repeat;
+}
 .mimgbtn1 {
 	height: 40px;
 	width: 264px;

@@ -29,20 +29,20 @@
             <li><a href="new_arrivals.html">Men: New Arrivals</a></li>
           </ul>
         </li>
-        <li><a class="MenuBarItemSubmenu" href="women.html">Women</a>
+        <li><a class="MenuBarItemSubmenu" href="/Cos/cos/in/women_pin.jsp">Women</a>
           <ul>
-            <li><a href="women.html">아우터웨어</a></li>
-            <li><a href="women.html">니트웨어</a></li>
-            <li><a href="women.html">셔츠</a></li>
-            <li><a href="women.html">드레스</a></li>
+            <li><a href="/Cos/cos/in/women.jsp">아우터웨어</a></li>
+            <li><a href="/Cos/cos/in/women.jsp">니트웨어</a></li>
+            <li><a href="/Cos/cos/in/women.jsp">셔츠</a></li>
+            <li><a href="/Cos/cos/in/women.jsp">드레스</a></li>
           </ul>
         </li>
-        <li><a href="men.html" class="MenuBarItemSubmenu">Men</a>
+        <li><a href="/Cos/cos/in/men_pin.jsp" class="MenuBarItemSubmenu">Men</a>
           <ul>
-            <li><a href="men.html">아우터웨어</a></li>
-            <li><a href="men.html">니트웨어</a></li>
-            <li><a href="men.html">셔츠</a></li>
-            <li><a href="men.html">드레스</a></li>
+            <li><a href="/Cos/cos/in/men.jsp">아우터웨어</a></li>
+            <li><a href="/Cos/cos/in/men.jsp">니트웨어</a></li>
+            <li><a href="/Cos/cos/in/men.jsp">셔츠</a></li>
+            <li><a href="/Cos/cos/in/men.jsp">드레스</a></li>
           </ul>
         </li>
         <li><a href="sustain.html" class="MenuBarItemSubmenu">Sustainability</a>

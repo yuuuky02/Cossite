@@ -22,7 +22,7 @@
           <ul>
             <li><a href="sale.html">Women's sale</a></li>
             <li><a href="sale.html">Men's sale</a></li>
-</ul>
+		  </ul>
         </li>
         <li><a href="new_arrivals.html" class="MenuBarItemSubmenu">New Arrivals</a>
           <ul>
@@ -32,21 +32,21 @@
         </li>
         <li><a class="MenuBarItemSubmenu" href="/Cos/cos/in/women_pin.jsp">Women</a>
           <ul>
-            <li><a href="womenin.jsp">아우터웨어</a></li>
-            <li><a href="womenin.jsp?pcategory=가디건">니트웨어</a></li>
-            <li><a href="womenin.jsp">셔츠</a></li>
-            <li><a href="womenin.jsp?pcategory=베스트">드레스</a></li>
+            <li><a href="/Cos/cos/in/womenin.jsp">아우터웨어</a></li>
+            <li><a href="/Cos/cos/in/womenin.jsp">니트웨어</a></li>
+            <li><a href="/Cos/cos/in/womenin.jsp">셔츠</a></li>
+            <li><a href="/Cos/cos/in/womenin.jsp">드레스</a></li>
           </ul>
         </li>
-        <li><a href="menin.jsp" class="MenuBarItemSubmenu">Men</a>
+        <li><a href="/Cos/cos/in/men_pin.jsp" class="MenuBarItemSubmenu">Men</a>
           <ul>
-            <li><a href="menin.jsp">아우터웨어</a></li>
-            <li><a href="menin.jsp">니트웨어</a></li>
-            <li><a href="menin.jsp">셔츠</a></li>
-            <li><a href="menin.jsp">트라우저</a></li>
+            <li><a href="/Cos/cos/in/menin.jsp">아우터웨어</a></li>
+            <li><a href="/Cos/cos/in/menin.jsp">니트웨어</a></li>
+            <li><a href="/Cos/cos/in/menin.jsp">셔츠</a></li>
+            <li><a href="/Cos/cos/in/menin.jsp">트라우저</a></li>
           </ul>
         </li>
-<li><a href="sustain.html" class="MenuBarItemSubmenu">Sustainability</a>
+		<li><a href="sustain.html" class="MenuBarItemSubmenu">Sustainability</a>
           <ul>
             <li><a href="sustain.html">Our Mission</a></li>
           </ul>
@@ -65,9 +65,10 @@
     <div class="title">니트웨어</div>
     <div class="cate">
       <div class="ca1">
-      <a href="women.jsp?pcategory=니트웨어">모두보기</a>
-      <a href="women.jsp?pcategory=가디건">가디건</a>
-      <a href="women.jsp?pcategory=베스트">베스트</a></div>
+      	<a href="/Cos/cos/in/womenin.jsp">모두보기</a>
+      	<a href="/Cos/cos/in/womenin.jsp">가디건</a>
+      	<a href="/Cos/cos/in/womenin.jsp">베스트</a>
+      </div>
     </div>
   </div>
   <div id="main">

@@ -6,7 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Cos_main</title>
-<link href="/Cos/cos/css/women_p_layout.css" rel="stylesheet" type="text/css" />
+<link href="/Cos/cos/css/product_layout.css" rel="stylesheet" type="text/css" />
 <link href="/Cos/cos/SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
 <script src="/Cos/cos/SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
 </head>
@@ -15,13 +15,13 @@
 <div id="wrap">
   <div id="page_header">
     <div class="phead">
-      <div class="logo"><a href="/Cos/cos/main.html">cos</a></div>
+      <div class="logo"><a href="/Cos/cos/in/mainin.jsp">cos</a></div>
       <ul id="MenuBar1" class="MenuBarHorizontal">
         <li><a class="MenuBarItemSubmenu" href="sale.html">Sale</a>
           <ul>
             <li><a href="sale.html">Women's sale</a></li>
             <li><a href="sale.html">Men's sale</a></li>
-</ul>
+		  </ul>
         </li>
         <li><a href="new_arrivals.html" class="MenuBarItemSubmenu">New Arrivals</a>
           <ul>
@@ -31,21 +31,21 @@
         </li>
         <li><a class="MenuBarItemSubmenu" href="/Cos/cos/in/women_pin.jsp">Women</a>
           <ul>
-            <li><a href="women.html">아우터웨어</a></li>
-            <li><a href="women.html">니트웨어</a></li>
-            <li><a href="women.html">셔츠</a></li>
-            <li><a href="women.html">드레스</a></li>
+            <li><a href="/Cos/cos/in/womenin.jsp">아우터웨어</a></li>
+            <li><a href="/Cos/cos/in/womenin.jsp">니트웨어</a></li>
+            <li><a href="/Cos/cos/in/womenin.jsp">셔츠</a></li>
+            <li><a href="/Cos/cos/in/womenin.jsp">드레스</a></li>
           </ul>
         </li>
-        <li><a href="men.html" class="MenuBarItemSubmenu">Men</a>
+        <li><a href="/Cos/cos/in/men_pin.jsp" class="MenuBarItemSubmenu">Men</a>
           <ul>
-            <li><a href="men.html">아우터웨어</a></li>
-            <li><a href="men.html">니트웨어</a></li>
-            <li><a href="men.html">셔츠</a></li>
-            <li><a href="men.html">트라우저</a></li>
+            <li><a href="/Cos/cos/in/menin.jsp">아우터웨어</a></li>
+            <li><a href="/Cos/cos/in/menin.jsp">니트웨어</a></li>
+            <li><a href="/Cos/cos/in/menin.jsp">셔츠</a></li>
+            <li><a href="/Cos/cos/in/menin.jsp">트라우저</a></li>
           </ul>
         </li>
-<li><a href="sustain.html" class="MenuBarItemSubmenu">Sustainability</a>
+		<li><a href="sustain.html" class="MenuBarItemSubmenu">Sustainability</a>
           <ul>
             <li><a href="sustain.html">Our Mission</a></li>
           </ul>
@@ -63,7 +63,12 @@
   <div id="page_secon">
     <div class="title">Women</div>
     <div class="cate">
-      <div class="ca1"><a href="women.html">Outerwear</a><a href="women.html">Knitwear</a><a href="women.html">Shirts</a><a href="women.html">Dresses</a></div>
+      <div class="ca1">
+      	<a href="/Cos/cos/in/womenin.jsp">Outerwear</a>
+      	<a href="/Cos/cos/in/womenin.jsp">Knitwear</a>
+      	<a href="/Cos/cos/in/womenin.jsp">Shirts</a>
+      	<a href="/Cos/cos/in/womenin.jsp">Dresses</a>
+      </div>
     </div>
   </div>
   <div id="main">
@@ -82,19 +87,19 @@
   <div id="banner">
     <div class="ban2">
       <div class="banimg"></div>
-      <div class="baninfo"><a href="women.html">여성 아우터웨어</a></div>
+      <div class="baninfo"><a href="/Cos/cos/in/womenin.jsp">여성 아우터웨어</a></div>
     </div>
     <div class="ban2">
       <div class="banimg"></div>
-      <div class="baninfo"><a href="women.html">여성 니트웨어</a></div>
+      <div class="baninfo"><a href="/Cos/cos/in/womenin.jsp">여성 니트웨어</a></div>
     </div>
     <div class="ban2">
       <div class="banimg"></div>
-      <div class="baninfo"><a href="women.html">여성 셔츠</a></div>
+      <div class="baninfo"><a href="/Cos/cos/in/womenin.jsp">여성 셔츠</a></div>
     </div>
     <div class="ban2">
       <div class="banimg"></div>
-      <div class="baninfo"><a href="women.html">여성 드레스</a></div>
+      <div class="baninfo"><a href="/Cos/cos/in/womenin.jsp">여성 드레스</a></div>
     </div>
   </div>
   <div class="tedul"></div>
