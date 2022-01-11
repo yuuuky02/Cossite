@@ -145,7 +145,7 @@ public class ProductDao {
    
    
    
-    public List<Product> selectCategory(Connection conn, String pcategory, String psort) 
+    public List<Product> selectCategory(Connection conn, String pcategory) 
             throws SQLException {
          PreparedStatement pstmt=null; 
          ResultSet rs = null;
@@ -153,9 +153,8 @@ public class ProductDao {
          List<Product> products = new ArrayList<Product>();
          try {
             pstmt = conn.prepareStatement
-            ("select * from product where pcategory,psort=?");
+            ("select * from product where pcategory=?");
             pstmt.setString(1, pcategory);
-            pstmt.setString(2, psort);
             rs = pstmt.executeQuery();
             while (rs.next()){
                product = new Product(); 
@@ -345,14 +344,14 @@ public class ProductDao {
       return productList;
    }
       
-      public List<Product> listByPrice(Connection conn) 
+      public List<Product> listByHPrice(Connection conn) 
             throws SQLException {
          PreparedStatement pstmt = null;
          ResultSet rs = null;
          List<Product> productList = null;
          try {
             pstmt = conn.prepareStatement
-                  ("select * from product order by price");         
+                  ("select * from product order by price desc");         
             rs  = pstmt.executeQuery(); 
             productList = new ArrayList<Product>();
             while (rs.next()){
@@ -375,6 +374,38 @@ public class ProductDao {
          }
          return productList;
    }
+      
+      
+      public List<Product> listByLPrice(Connection conn) 
+              throws SQLException {
+           PreparedStatement pstmt = null;
+           ResultSet rs = null;
+           List<Product> productList = null;
+           try {
+              pstmt = conn.prepareStatement
+                    ("select * from product order by price asc");         
+              rs  = pstmt.executeQuery(); 
+              productList = new ArrayList<Product>();
+              while (rs.next()){
+                 Product product = new Product();
+                 product.setPid(rs.getInt(1));
+                 product.setPname(rs.getString(2));
+                 product.setPrice(rs.getInt(3));
+                 product.setPgender(rs.getString(4));
+                 product.setPcategory(rs.getString(5));
+                 product.setPsort(rs.getString(6));
+                 product.setPimage(rs.getString(7));
+                 product.setPdate(rs.getTimestamp(8));
+                 product.setPcount(rs.getInt(9));
+                 productList.add(product);
+              }
+           } finally {
+              JdbcUtil.close(conn);
+              JdbcUtil.close(rs);
+              JdbcUtil.close(pstmt);
+           }
+           return productList;
+     }
       
    private static final int PRODUCT_COUNT_PER_PAGE = 5;
 

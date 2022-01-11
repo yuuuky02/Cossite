@@ -7,7 +7,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Cos_main</title>
-<link href="/Cos/cos/css/women_layout.css" rel="stylesheet" type="text/css" />
+<link href="/Cos/cos/css/detail_layout.css" rel="stylesheet" type="text/css" />
 <link href="/Cos/cos/SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
 <script src="/Cos/cos/SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
 </head>
@@ -16,13 +16,13 @@
 <div id="wrap">
   <div id="page_header">
     <div class="phead">
-      <div class="logo"><a href="/Cos/cos/main.html">cos</a></div>
+      <div class="logo"><a href="main.html">cos</a></div>
       <ul id="MenuBar1" class="MenuBarHorizontal">
         <li><a class="MenuBarItemSubmenu" href="sale.html">Sale</a>
           <ul>
             <li><a href="sale.html">Women's sale</a></li>
             <li><a href="sale.html">Men's sale</a></li>
-		  </ul>
+</ul>
         </li>
         <li><a href="new_arrivals.html" class="MenuBarItemSubmenu">New Arrivals</a>
           <ul>
@@ -30,23 +30,23 @@
             <li><a href="new_arrivals.html">Men: New Arrivals</a></li>
           </ul>
         </li>
-        <li><a class="MenuBarItemSubmenu" href="/Cos/cos/women_p.html">Women</a>
+        <li><a class="MenuBarItemSubmenu" href="women.html">Women</a>
           <ul>
-            <li><a href="/Cos/cos/women.jsp">아우터웨어</a></li>
-            <li><a href="/Cos/cos/women.jsp">니트웨어</a></li>
-            <li><a href="/Cos/cos/women.jsp">셔츠</a></li>
-            <li><a href="/Cos/cos/women.jsp">드레스</a></li>
+            <li><a href="women.html">아우터웨어</a></li>
+            <li><a href="women.html">니트웨어</a></li>
+            <li><a href="women.html">셔츠</a></li>
+            <li><a href="women.html">드레스</a></li>
           </ul>
         </li>
-        <li><a href="/Cos/cos/men_p.html" class="MenuBarItemSubmenu">Men</a>
+        <li><a href="men.html" class="MenuBarItemSubmenu">Men</a>
           <ul>
-            <li><a href="/Cos/cos/men.jsp">아우터웨어</a></li>
-            <li><a href="/Cos/cos/men.jsp">니트웨어</a></li>
-            <li><a href="/Cos/cos/men.jsp">셔츠</a></li>
-            <li><a href="/Cos/cos/men.jsp">트라우저</a></li>
+            <li><a href="men.html">아우터웨어</a></li>
+            <li><a href="men.html">니트웨어</a></li>
+            <li><a href="men.html">셔츠</a></li>
+            <li><a href="men.html">트라우저</a></li>
           </ul>
         </li>
-		<li><a href="sustain.html" class="MenuBarItemSubmenu">Sustainability</a>
+<li><a href="sustain.html" class="MenuBarItemSubmenu">Sustainability</a>
           <ul>
             <li><a href="sustain.html">Our Mission</a></li>
           </ul>
@@ -54,44 +54,52 @@
       </ul>
       <div class="psmenu">
         <div class="pms2"><a href="search.html">검색</a></div>
-        <div class="pms2"><a href="/Cos/login/loginForm.html">로그인</a></div>
-        <div class="pms2"><a href="/Cos/join/joinForm.html">회원가입</a></div>
+        <div class="pms2"><a href="loginForm.html">로그인</a></div>
+        <div class="pms2"><a href="joinForm.html">회원가입</a></div>
         <div class="pms2"><a href="wishlist.html">위시리스트</a></div>
         <div class="pms2"><a href="cart.html">장바구니</a></div>
       </div>
     </div>
   </div>
-  <div id="page_secon">
-    <div class="title">니트웨어</div>
-    <div class="cate">
-      <div class="ca1">
-      	<a href="/Cos/cos/men.jsp">모두보기</a>
-      	<a href="/Cos/cos/men.jsp">가디건</a>
-      	<a href="/Cos/cos/men.jsp">베스트</a>
-      </div>
-    </div>
-  </div>
   <div id="main">
-    <div class="ma1">
-      <div class="category">
-        <select name="category" id="category">
-          <option value="추천순" selected="selected">추천순</option>
-          <option value="신상품">신상품순</option>
-          <option value="낮은가격순">낮은가격순</option>
-          <option value="높은가격순">높은가격순</option>
-        </select>
-      </div>
+<%
+	int pid = Integer.parseInt(request.getParameter("pid"));
+	Product product=null;
+	Connection conn = ConnectionProvider.getConnection();
+	try{
+		ProductDao dao = new ProductDao();
+		product = dao.selectById(conn, pid);
+	}catch(SQLException e){}
+	if (product != null){
+%>
+	<c:set var="p" value="<%=product %>"/>
+    <div class="pimage">
+    	<img src="/Cos/uploadImages/${p.pimage}" width="608" height="905" />
     </div>
-  </div>
+    <div class="dinfo"><table width="545" height="373" border="0" cellpadding="3" cellspacing="2" id="detail">
+  <tr>
+    <td height="62"><div class="new">NEW</div></td>
+  </tr>
   
-
-  
-  <div id="banner">
-    <div class="ban1">
-      <div class="banimg"><img src="/Cos/uploadImages/${product.pimage}"/></div>
-      <div class="baninfo">${product.pname}<br />
-${product.price} 원</div>
-    </div>
+  <tr>
+    <td height="31">${p.pcategory}</td>
+  </tr>
+  <tr>
+    <td height="35"><strong>${p.pname}</strong></td>
+  </tr>
+  <tr>
+    <td height="84">${p.price} 원</td>
+  </tr>
+<% } %>
+  <tr>
+    <td height="149">
+    	<a href="purchase.jsp"><input type="submit" name="cart_btn" id="cart_btn" value="장바구니 담기" /></a>      
+    	<a href="putcart.jsp"><input type="submit" name="pay_btn" id="pay_btn" value="주문하기" /></a>
+    </td>
+  </tr>
+</table>
+</div>
+    
   </div>
   <div class="tedul"></div>
   <div id="footer"></div>

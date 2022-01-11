@@ -173,16 +173,32 @@ body {
 	width: 1676px;
 	margin-left: 34px;
 }
-.category {
+.click_btn {
+	height: 30px;
+	width: 60px;
 	float: right;
-	height: 64px;
-	width: 176px;
-	text-align: right;
-	color: #000;
-	margin-right: 20px;
+	margin-top: 20px;
 }
-#category {
+
+.category {
+	height: 64px;
+	width: 250px;
+	text-align: right;
+	margin-right: 20px;
+	color: #000;
 	float: right;
+	font-family: "돋움";
+}
+#cate_btn {
+	font-size: 18px;
+	height: 30px;
+	width: 60px;
+	background-color: #f5f5f5;
+	border: 1px solid #f5f5f5;
+}
+
+#category {
+	float: left;
 	font-size: 18px;
 	width: 176px;
 	margin-top: 20px;

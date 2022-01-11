@@ -1,0 +1,143 @@
+@charset "utf-8";
+body {
+	font-family: "맑은 고딕";
+}
+#wrap {
+	clear: both;
+	height: auto;
+	width: 1722px;
+	margin-top: 0px;
+}
+#page_header {
+	clear: both;
+	height: 122px;
+	width: 1722px;
+	margin-top: 0px;
+	float: left;
+}
+.phead {
+	clear: both;
+	float: left;
+	height: 82px;
+	width: 1722px;
+	margin-top: 0px;
+	position: fixed;
+	background-color: #FFF;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	top: 0px;
+}
+.logo {
+	font-size: 55px;
+	float: left;
+	height: 82px;
+	width: 130px;
+	color: #000;
+	text-align: center;
+	font-weight: bolder;
+}
+.logo a {
+	color: #000;
+	text-decoration: none;
+}
+.logo a: hover {
+	color: #000;
+	text-decoration: none;
+}
+.psmenu {
+	float: right;
+	height: 82px;
+	width: 450px;
+	font-weight: normal;
+	color: #1B1B1B;
+	font-size: 15px;
+}
+.pms2 {
+	float: left;
+	height: 52px;
+	width: auto;
+	padding-top: 30px;
+	padding-right: 12px;
+	padding-left: 12px;
+}
+.psmenu a {
+	color: #1B1B1B;
+	text-decoration: none;
+}
+.pms2 a:hover {
+	color: #6200C4;
+	text-decoration: overline;
+}
+#main {
+	clear: both;
+	height: auto;
+	width: 1722px;
+	font-family: "돋움";
+}
+#footer {
+	clear: both;
+	float: left;
+	height: 307px;
+	width: 1722px;
+	background-image: url(images/main/footer.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+.tedul {
+	clear: both;
+	height: 100px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCC;
+	width: 1676px;
+	margin-left: 23px;
+	margin-top: 100px;
+}
+.pimage {
+	float: left;
+	height: 905px;
+	width: 608px;
+	margin-left: 174px;
+	margin-top: 50px;
+}
+.dinfo {
+	float: right;
+	height: 651px;
+	width: 545px;
+	margin-top: 50px;
+	margin-right: 170px;
+}
+#cart_btn {
+	font-size: 23px;
+	font-weight: 400;
+	color: #FFF;
+	background-color: #cccccc;
+	text-align: center;
+	clear: both;
+	height: 45px;
+	width: 200px;
+	border: 1px solid #cccccc;
+}
+#detail tr td strong {
+	font-size: 27px;
+}
+#detail tr td {
+	font-size: 23px;
+}
+#pay_btn {
+	color: #FFF;
+	height: 45px;
+	width: 200px;
+	background-color: #202020;
+	font-weight: 400;
+	font-size: 23px;
+	border: 1px solid #202020;
+	text-align: center;
+}
+.new {
+	color: #C03;
+	height: 30px;
+	width: 50px;
+	font-size: 18px;
+}

@@ -75,40 +75,54 @@
   </div>
   <div id="main">
     <div class="ma1">
+     <form name="form1" method="post" action="">
       <div class="category">
-        <select name="category" id="category">
-          <option value="추천순" selected="selected">추천순</option>
-          <option value="신상품">신상품순</option>
-          <option value="낮은가격순">낮은가격순</option>
-          <option value="높은가격순">높은가격순</option>
+        <select name="orderby" id="category">
+          <option value="pdate" selected="selected">신상품순</option>
+          <option value="pcount">인기순</option>
+          <option value="lprice">낮은가격순</option>
+          <option value="hprice">높은가격순</option>
         </select>
+        <div class="click_btn">
+          <input type="submit" name="cate_btn" id="cate_btn" value="보기" />
+        </div>
       </div>
+     </form>
     </div>
   </div>
   
 <%
 	//String pgender = request.getParameter("pgender");
-  	String pcategory = request.getParameter("pcategory");
-  	String psort = request.getParameter("psort");
+  	//String pcategory = request.getParameter("pcategory");
 	Connection conn = ConnectionProvider.getConnection();
 	List<Product> products = null;
-	
+	String orderby = request.getParameter("orderby");
 	try{
 		ProductDao dao = new ProductDao();
-		//products = dao.selectGender(conn, pgender);
-		products = dao.selectCategory(conn, pcategory, psort);
-		//products = dao.selectSort(conn, psort);
+		//products = dao.selectCategory(conn, pcategory);
+		if (orderby == null)
+			products = dao.selectList(conn);
+		else if (orderby.equals("pdate"))
+			products = dao.listByPdate(conn);
+		else if (orderby.equals("pcount"))
+			products = dao.listByPcount(conn);
+		else if (orderby.equals("lprice"))
+			products = dao.listByLPrice(conn);
+		else if (orderby.equals("hprice"))
+			products = dao.listByHPrice(conn);
 	}catch(SQLException e){}
+	if (products != null){
 %>
   
   <div id="banner">
-   <c:forEach var="product" items="<%=products %>">
+   <c:forEach var ="product" items="<%=products %>">
     <div class="ban1">
-      <div class="banimg"><img src="/Cos/uploadImages/${product.pimage}"/></div>
+      <div class="banimg"><a href="/Cos/purchaser/detail.jsp?pid=${product.pid}"><img src="/Cos/uploadImages/${product.pimage}"/></a></div>
       <div class="baninfo">${product.pname}<br />
 ${product.price} 원</div>
     </div>
    </c:forEach>
+   <%} %>
   </div>
   <div class="tedul"></div>
   <div id="footer"></div>
