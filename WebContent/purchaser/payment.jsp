@@ -45,7 +45,22 @@
     </div>
     
     <%
-    	
+    	request.setCharacterEncoding("utf-8");
+   		String memberId = request.getParameter("memberId");
+		String cardCompany = request.getParameter("cardCompany");
+		String cardNumber = request.getParameter("cardNumber");
+		String cardPassword = request.getParameter("cardPassword");
+		String validDate = request.getParameter("validDate");
+		SimpleDateFormat sdf = new SimpleDateFormat("MM/yyyy");
+		java.util.Date vd = sdf.parse(validDate);
+    	int totalPrice = Integer.parseInt(request.getParameter("totalPrice"));
+    	java.util.Date payDate = new java.util.Date();
+    	Payment pmt = new Payment(memberId, cardCompany, cardNumber,cardPassword, vd, totalPrice, payDate);
+    	Connection conn = ConnectionProvider.getConnection();
+    	try{
+    		PaymentDao dao = new PaymentDao();
+    		dao.insert(conn,pmt);
+    	} catch(SQLException e){}    	
     %>
     
     <div class="paybox">
