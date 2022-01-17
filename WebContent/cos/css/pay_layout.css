@@ -1,0 +1,142 @@
+@charset "utf-8";
+body {
+	font-family: "맑은 고딕";
+}
+#wrap {
+	clear: both;
+	height: auto;
+	width: 1722px;
+	margin-top: 0px;
+}
+#page_header {
+	clear: both;
+	height: 122px;
+	width: 1722px;
+	margin-top: 0px;
+	float: left;
+}
+.phead {
+	clear: both;
+	float: left;
+	height: 82px;
+	width: 1722px;
+	margin-top: 0px;
+	position: fixed;
+	background-color: #FFF;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	top: 0px;
+}
+.logo {
+	font-size: 55px;
+	float: left;
+	height: 82px;
+	width: 130px;
+	color: #000;
+	text-align: center;
+	font-weight: bolder;
+}
+.logo a {
+	color: #000;
+	text-decoration: none;
+}
+.logo a: hover {
+	color: #000;
+	text-decoration: none;
+}
+#main {
+	clear: both;
+	height: auto;
+	width: 1722px;
+	font-family: "돋움";
+}
+#footer {
+	clear: both;
+	float: left;
+	height: 307px;
+	width: 1722px;
+	background-image: url(images/main/footer.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+.tedul {
+	clear: both;
+	height: 100px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCC;
+	width: 1676px;
+	margin-left: 23px;
+	margin-top: 100px;
+}
+.pay {
+	float: left;
+	height: 300px;
+	width: 500px;
+	margin-top: 40px;
+	margin-bottom: 100px;
+	margin-left: 100px;
+	font-family: "돋움";
+}
+.title {
+	font-weight: bold;
+	height: 30px;
+	width: 100px;
+	font-size: 30px;
+	color: #383838;
+}
+#payinfo {
+	margin-top: 70px;
+	font-size: 22px;
+}
+
+#payinfo tr td a {
+	color: #000;
+}
+.tiltie1 {
+	height: 40px;
+	width: 320px;
+	font-size: 22px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+}
+.tiltie2 {
+	height: 40px;
+	width: 400px;
+	font-size: 22px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+}
+#pay_btn {
+	text-align: center;
+	height: 50px;
+	width: 300px;
+	color: #FFF;
+	background-color: #333;
+	border: 1px solid #333;
+	font-size: 23px;
+	margin-left:65px;
+}
+#pay2 {
+	font-family: "돋움";
+	font-size: 22px;
+}
+#p1 {
+	width: 250px;
+	height: 35px;
+	color: #000000;
+	background-color: #e7e7e7;
+	border: 1px solid #e7e7e7;
+	font-size: 20px;
+}
+.paybox {
+	float: left;
+	height: 600px;
+	width: 500px;
+	margin-left: 100px;
+	margin-top: 140px;
+	margin-bottom: 100px;
+}
