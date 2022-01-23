@@ -1,3 +1,7 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.sql.*,my.util.*,my.dao.*,my.model.*,java.util.*" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -26,20 +30,20 @@
             <li><a href="new_arrivals.html">Men: New Arrivals</a></li>
           </ul>
         </li>
-        <li><a class="MenuBarItemSubmenu" href="/Cos/cos/women_p.html">Women</a>
+        <li><a class="MenuBarItemSubmenu" href="/Cos/cos/women_p.jsp">Women</a>
           <ul>
-            <li><a href="/Cos/cos/women.jsp">아우터웨어</a></li>
-            <li><a href="/Cos/cos/women.jsp">니트웨어</a></li>
-            <li><a href="/Cos/cos/women.jsp">셔츠</a></li>
-            <li><a href="/Cos/cos/women.jsp">드레스</a></li>
+            <li><a href="/Cos/cos/women1.jsp?pcategory=여성아우터웨어">아우터웨어</a></li>
+            <li><a href="/Cos/cos/women2.jsp?pcategory=여성니트웨어">니트웨어</a></li>
+            <li><a href="/Cos/cos/women3.jsp?pcategory=여성셔츠">셔츠</a></li>
+            <li><a href="/Cos/cos/women4.jsp?pcategory=여성드레스">드레스</a></li>
           </ul>
         </li>
-        <li><a href="/Cos/cos/men_p.html" class="MenuBarItemSubmenu">Men</a>
+        <li><a href="/Cos/cos/men_p.jsp" class="MenuBarItemSubmenu">Men</a>
           <ul>
-            <li><a href="/Cos/cos/men.jsp">아우터웨어</a></li>
-            <li><a href="/Cos/cos/men.jsp">니트웨어</a></li>
-            <li><a href="/Cos/cos/men.jsp">셔츠</a></li>
-            <li><a href="/Cos/cos/men.jsp">트라우저</a></li>
+            <li><a href="/Cos/cos/men1.jsp?pcategory=남성아우터웨어">아우터웨어</a></li>
+            <li><a href="/Cos/cos/men2.jsp?pcategory=남성니트웨어">니트웨어</a></li>
+            <li><a href="/Cos/cos/men3.jsp?pcategory=남성셔츠">셔츠</a></li>
+            <li><a href="/Cos/cos/men4.jsp?pcategory=남성트라우저">트라우저</a></li>
           </ul>
         </li>
 		<li><a href="sustain.html" class="MenuBarItemSubmenu">Sustainability</a>
@@ -61,10 +65,10 @@
     <div class="title">Women</div>
     <div class="cate">
       <div class="ca1">
-      	<a href="/Cos/cos/women.jsp">Outerwear</a>
-      	<a href="/Cos/cos/women.jsp">Knitwear</a>
-      	<a href="/Cos/cos/women.jsp">Shirts</a>
-      	<a href="/Cos/cos/women.jsp">Dresses</a>
+      	<a href="/Cos/cos/women1.jsp?pcategory=여성아우터웨어">Outerwear</a>
+      	<a href="/Cos/cos/women2.jsp?pcategory=여성니트웨어">Knitwear</a>
+      	<a href="/Cos/cos/women3.jsp?pcategory=여성셔츠">Shirts</a>
+      	<a href="/Cos/cos/women4.jsp?pcategory=여성드레스">Dresses</a>
       </div>
     </div>
   </div>
@@ -84,19 +88,19 @@
   <div id="banner">
     <div class="ban2">
       <div class="banimg"></div>
-      <div class="baninfo"><a href="/Cos/cos/women.jsp">여성 아우터웨어</a></div>
+      <div class="baninfo"><a href="/Cos/cos/women1.jsp?pcategory=여성아우터웨어">여성 아우터웨어</a></div>
     </div>
     <div class="ban2">
       <div class="banimg"></div>
-      <div class="baninfo"><a href="/Cos/cos/women.jsp">여성 니트웨어</a></div>
+      <div class="baninfo"><a href="/Cos/cos/women2.jsp?pcategory=여성니트웨어">여성 니트웨어</a></div>
     </div>
     <div class="ban2">
       <div class="banimg"></div>
-      <div class="baninfo"><a href="/Cos/cos/women.jsp">여성 셔츠</a></div>
+      <div class="baninfo"><a href="/Cos/cos/women3.jsp?pcategory=여성셔츠">여성 셔츠</a></div>
     </div>
     <div class="ban2">
       <div class="banimg"></div>
-      <div class="baninfo"><a href="/Cos/cos/women.jsp">여성 드레스</a></div>
+      <div class="baninfo"><a href="/Cos/cos/women4.jsp?pcategory=여성드레스">여성 드레스</a></div>
     </div>
   </div>
   <div class="tedul"></div>

@@ -32,18 +32,18 @@
         </li>
         <li><a class="MenuBarItemSubmenu" href="/Cos/cos/in/women_pin.jsp">Women</a>
           <ul>
-            <li><a href="/Cos/cos/in/womenin.jsp">아우터웨어</a></li>
-            <li><a href="/Cos/cos/in/womenin.jsp">니트웨어</a></li>
-            <li><a href="/Cos/cos/in/womenin.jsp">셔츠</a></li>
-            <li><a href="/Cos/cos/in/womenin.jsp">드레스</a></li>
+            <li><a href="/Cos/cos/in/womenin1.jsp?pcategory=여성아우터웨어">아우터웨어</a></li>
+            <li><a href="/Cos/cos/in/womenin2.jsp?pcategory=여성니트웨어">니트웨어</a></li>
+            <li><a href="/Cos/cos/in/womenin3.jsp?pcategory=여성셔츠">셔츠</a></li>
+            <li><a href="/Cos/cos/in/womenin4.jsp?pcategory=여성드레스">드레스</a></li>
           </ul>
         </li>
         <li><a href="/Cos/cos/in/men_pin.jsp" class="MenuBarItemSubmenu">Men</a>
           <ul>
-            <li><a href="/Cos/cos/in/menin.jsp">아우터웨어</a></li>
-            <li><a href="/Cos/cos/in/menin.jsp">니트웨어</a></li>
-            <li><a href="/Cos/cos/in/menin.jsp">셔츠</a></li>
-            <li><a href="/Cos/cos/in/menin.jsp">트라우저</a></li>
+            <li><a href="/Cos/cos/in/menin1.jsp?pcategory=남성아우터웨어">아우터웨어</a></li>
+            <li><a href="/Cos/cos/in/menin2.jsp?pcategory=남성니트웨어">니트웨어</a></li>
+            <li><a href="/Cos/cos/in/menin3.jsp?pcategory=남성셔츠">셔츠</a></li>
+            <li><a href="/Cos/cos/in/menin4.jsp?pcategory=남성트라우저">트라우저</a></li>
           </ul>
         </li>
 		<li><a href="sustain.html" class="MenuBarItemSubmenu">Sustainability</a>

@@ -31,20 +31,20 @@
             <li><a href="new_arrivals.html">Men: New Arrivals</a></li>
           </ul>
         </li>
-        <li><a class="MenuBarItemSubmenu" href="/Cos/cos/women_p.html">Women</a>
+        <li><a class="MenuBarItemSubmenu" href="/Cos/cos/women_p.jsp">Women</a>
           <ul>
-            <li><a href="/Cos/cos/women1.jsp?pgender=여&pcategory=아우터웨어">아우터웨어</a></li>
-            <li><a href="/Cos/cos/women2.jsp?pgender=여&pcategory=니트웨어">니트웨어</a></li>
-            <li><a href="/Cos/cos/women3.jsp?pgender=여&pcategory=셔츠">셔츠</a></li>
-            <li><a href="/Cos/cos/women4.jsp?pgender=여&pcategory=드레스">드레스</a></li>
+            <li><a href="/Cos/cos/women1.jsp?pcategory=여성아우터웨어">아우터웨어</a></li>
+            <li><a href="/Cos/cos/women2.jsp?pcategory=여성니트웨어">니트웨어</a></li>
+            <li><a href="/Cos/cos/women3.jsp?pcategory=여성셔츠">셔츠</a></li>
+            <li><a href="/Cos/cos/women4.jsp?pcategory=여성드레스">드레스</a></li>
           </ul>
         </li>
-        <li><a href="/Cos/cos/men_p.html" class="MenuBarItemSubmenu">Men</a>
+        <li><a href="/Cos/cos/men_p.jsp" class="MenuBarItemSubmenu">Men</a>
           <ul>
-            <li><a href="/Cos/cos/men1.jsp?pgender=남&pcategory=아우터웨어">아우터웨어</a></li>
-            <li><a href="/Cos/cos/men2.jsp?pgender=남&pcategory=니트웨어">니트웨어</a></li>
-            <li><a href="/Cos/cos/men3.jsp?pgender=남&pcategory=셔츠">셔츠</a></li>
-            <li><a href="/Cos/cos/men4.jsp?pgender=남&pcategory=트라우저">트라우저</a></li>
+            <li><a href="/Cos/cos/men1.jsp?pcategory=남성아우터웨어">아우터웨어</a></li>
+            <li><a href="/Cos/cos/men2.jsp?pcategory=남성니트웨어">니트웨어</a></li>
+            <li><a href="/Cos/cos/men3.jsp?pcategory=남성셔츠">셔츠</a></li>
+            <li><a href="/Cos/cos/men4.jsp?pcategory=남성트라우저">트라우저</a></li>
           </ul>
         </li>
 		<li><a href="sustain.html" class="MenuBarItemSubmenu">Sustainability</a>
@@ -67,62 +67,44 @@
     <div class="title">니트웨어</div>
     <div class="cate">
       <div class="ca1">
-      	<a href="/Cos/cos/women2.jsp?pgender=여">모두보기</a>
-      	<a href="/Cos/cos/women2.jsp?pcategory=니트웨어">가디건</a>
-      	<a href="/Cos/cos/women2.jsp?pcategory=니트웨어&psort=베스트">베스트</a>
+      	<a href="/Cos/cos/women2.jsp?pcategory=여성니트웨어">모두보기</a>
+      	<a href="/Cos/cos/women2.jsp?psort=여성가디건">가디건</a>
+      	<a href="/Cos/cos/women2.jsp?psort=여성베스트">베스트</a>
       </div>
     </div>
   </div>
   <div id="main">
     <div class="ma1">
-     <form name="form1" method="post" action="">
       <div class="category">
-        <select name="orderby" id="category">
-          <option value="pdate" selected="selected">신상품순</option>
-          <option value="pcount">인기순</option>
-          <option value="lprice">낮은가격순</option>
-          <option value="hprice">높은가격순</option>
+        <select name="category" id="category">
+          <option value="추천순" selected="selected">추천순</option>
+          <option value="신상품">신상품순</option>
+          <option value="낮은가격순">낮은가격순</option>
+          <option value="높은가격순">높은가격순</option>
         </select>
-        <div class="click_btn">
-          <input type="submit" name="cate_btn" id="cate_btn" value="보기" />
-        </div>
       </div>
-     </form>
     </div>
   </div>
   
 <%
-	//String pgender = request.getParameter("pgender");
-  	//String pcategory = request.getParameter("pcategory");
+  	String pcategory = request.getParameter("pcategory");
 	Connection conn = ConnectionProvider.getConnection();
 	List<Product> products = null;
-	String orderby = request.getParameter("orderby");
+	
 	try{
 		ProductDao dao = new ProductDao();
-		//products = dao.selectCategory(conn, pcategory);
-		if (orderby == null)
-			products = dao.selectList(conn);
-		else if (orderby.equals("pdate"))
-			products = dao.listByPdate(conn);
-		else if (orderby.equals("pcount"))
-			products = dao.listByPcount(conn);
-		else if (orderby.equals("lprice"))
-			products = dao.listByLPrice(conn);
-		else if (orderby.equals("hprice"))
-			products = dao.listByHPrice(conn);
+		products = dao.selectCategory(conn, pcategory);
 	}catch(SQLException e){}
-	if (products != null){
 %>
   
   <div id="banner">
-   <c:forEach var ="product" items="<%=products %>">
+   <c:forEach var="product" items="<%=products %>">
     <div class="ban1">
-      <div class="banimg"><a href="/Cos/purchaser/detail.jsp?pid=${product.pid}"><img src="/Cos/uploadImages/${product.pimage}"/></a></div>
+      <div class="banimg"><img src="/Cos/uploadImages/${product.pimage}"/></div>
       <div class="baninfo">${product.pname}<br />
 ${product.price} 원</div>
     </div>
    </c:forEach>
-   <%} %>
   </div>
   <div class="tedul"></div>
   <div id="footer"></div>

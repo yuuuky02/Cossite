@@ -31,18 +31,18 @@
         </li>
         <li><a class="MenuBarItemSubmenu" href="/Cos/cos/in/women_pin.jsp">Women</a>
           <ul>
-            <li><a href="/Cos/cos/in/womenin.jsp">아우터웨어</a></li>
-            <li><a href="/Cos/cos/in/womenin.jsp">니트웨어</a></li>
-            <li><a href="/Cos/cos/in/womenin.jsp">셔츠</a></li>
-            <li><a href="/Cos/cos/in/womenin.jsp">드레스</a></li>
+            <li><a href="/Cos/cos/in/womenin1.jsp?pcategory=여성아우터웨어">아우터웨어</a></li>
+            <li><a href="/Cos/cos/in/womenin2.jsp?pcategory=여성니트웨어">니트웨어</a></li>
+            <li><a href="/Cos/cos/in/womenin3.jsp?pcategory=여성셔츠">셔츠</a></li>
+            <li><a href="/Cos/cos/in/womenin4.jsp?pcategory=여성드레스">드레스</a></li>
           </ul>
         </li>
         <li><a href="/Cos/cos/in/men_pin.jsp" class="MenuBarItemSubmenu">Men</a>
           <ul>
-            <li><a href="/Cos/cos/in/menin.jsp">아우터웨어</a></li>
-            <li><a href="/Cos/cos/in/menin.jsp">니트웨어</a></li>
-            <li><a href="/Cos/cos/in/menin.jsp">셔츠</a></li>
-            <li><a href="/Cos/cos/in/menin.jsp">트라우저</a></li>
+            <li><a href="/Cos/cos/in/menin1.jsp?pcategory=남성아우터웨어">아우터웨어</a></li>
+            <li><a href="/Cos/cos/in/menin2.jsp?pcategory=남성니트웨어">니트웨어</a></li>
+            <li><a href="/Cos/cos/in/menin3.jsp?pcategory=남성셔츠">셔츠</a></li>
+            <li><a href="/Cos/cos/in/menin4.jsp?pcategory=남성트라우저">트라우저</a></li>
           </ul>
         </li>
 		<li><a href="sustain.html" class="MenuBarItemSubmenu">Sustainability</a>
@@ -91,27 +91,33 @@
         <tr>
           <td width="111" height="60">상품분류</td>
           <td id="uploadtable"><select name="pcategory" id="product">
-            <option value="니트웨어" selected="selected">니트웨어</option>
-            <option value="아우터웨어">아우터웨어</option>
-            <option value="드레스">드레스</option>
-            <option value="트라우저">트라우저</option>
+            <option value="여성아우터웨어" selected="selected">여성아우터웨어</option>
+            <option value="남성니트웨어">남성아우터웨어</option>
+            <option value="여성니트웨어">여성니트웨어</option>
+            <option value="남성니트웨어">남성니트웨어</option>
+            <option value="여성드레스">여성드레스</option>
+            <option value="남성트라우저">남성트라우저</option>
           </select></td>
         </tr>
         <tr>
           <td width="111" height="60">상품종류</td>
           <td id="uploadtable"><select name="psort" id="product">
-            <option value="재킷" selected="selected">재킷</option>
-            <option value="코트">코트</option>
-            <option value="가디건">가디건</option>
-            <option value="베스트">베스트</option>
-            <option value="블라우스">블라우스</option>
-            <option value="셔츠 드레스">셔츠 드레스</option>
-            <option value="셔츠 재킷">셔츠 재킷</option>
-            <option value="릭랙스드 핏 셔츠">릭랙스드 핏 셔츠</option>
-            <option value="니트 드레스">니트 드레스</option>
-            <option value="슬리브리스 드레스">슬리브리스 드레스</option>
-            <option value="레귤러 핏 트라우저">레귤러 핏 트라우저</option>
-            <option value="릭랙스드 핏 트라우저">릭랙스드 핏 트라우저</option>
+            <option value="여성재킷" selected="selected">여성 재킷</option>
+            <option value="여성코트">여성 코트</option>
+            <option value="남성재킷">남성 재킷</option>
+            <option value="남성코트">남성 코트</option>
+            <option value="여성가디건">여성 가디건</option>
+            <option value="여성베스트">여성 베스트</option>
+            <option value="남성가디건">남성 가디건</option>
+            <option value="남성베스트">남성 베스트</option>
+            <option value="여성블라우스">여성 블라우스</option>
+            <option value="여성셔츠드레스">여성 셔츠 드레스</option>
+            <option value="남성셔츠재킷">남성 셔츠 재킷</option>
+            <option value="남성릭랙스드핏셔츠">남성 릭랙스드 핏 셔츠</option>
+            <option value="여성니트드레스">여성 니트 드레스</option>
+            <option value="여성슬리브리스드레스">여성 슬리브리스 드레스</option>
+            <option value="남성레귤러핏트라우저">남성 레귤러 핏 트라우저</option>
+            <option value="남성릭랙스드핏트라우저">남성 릭랙스드 핏 트라우저</option>
           </select></td>
         </tr>
         <tr>

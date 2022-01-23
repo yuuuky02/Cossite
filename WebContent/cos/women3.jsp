@@ -31,20 +31,20 @@
             <li><a href="new_arrivals.html">Men: New Arrivals</a></li>
           </ul>
         </li>
-        <li><a class="MenuBarItemSubmenu" href="/Cos/cos/women_p.html">Women</a>
+        <li><a class="MenuBarItemSubmenu" href="/Cos/cos/women_p.jsp">Women</a>
           <ul>
-            <li><a href="/Cos/cos/women1.jsp?pgender=여&pcategory=아우터웨어">아우터웨어</a></li>
-            <li><a href="/Cos/cos/women2.jsp?pgender=여&pcategory=니트웨어">니트웨어</a></li>
-            <li><a href="/Cos/cos/women3.jsp?pgender=여&pcategory=셔츠">셔츠</a></li>
-            <li><a href="/Cos/cos/women4.jsp?pgender=여&pcategory=드레스">드레스</a></li>
+            <li><a href="/Cos/cos/women1.jsp?pcategory=여성아우터웨어">아우터웨어</a></li>
+            <li><a href="/Cos/cos/women2.jsp?pcategory=여성니트웨어">니트웨어</a></li>
+            <li><a href="/Cos/cos/women3.jsp?pcategory=여성셔츠">셔츠</a></li>
+            <li><a href="/Cos/cos/women4.jsp?pcategory=여성드레스">드레스</a></li>
           </ul>
         </li>
-        <li><a href="/Cos/cos/men_p.html" class="MenuBarItemSubmenu">Men</a>
+        <li><a href="/Cos/cos/men_p.jsp" class="MenuBarItemSubmenu">Men</a>
           <ul>
-            <li><a href="/Cos/cos/men1.jsp?pgender=남&pcategory=아우터웨어">아우터웨어</a></li>
-            <li><a href="/Cos/cos/men2.jsp?pgender=남&pcategory=니트웨어">니트웨어</a></li>
-            <li><a href="/Cos/cos/men3.jsp?pgender=남&pcategory=셔츠">셔츠</a></li>
-            <li><a href="/Cos/cos/men4.jsp?pgender=남&pcategory=트라우저">트라우저</a></li>
+            <li><a href="/Cos/cos/men1.jsp?pcategory=남성아우터웨어">아우터웨어</a></li>
+            <li><a href="/Cos/cos/men2.jsp?pcategory=남성니트웨어">니트웨어</a></li>
+            <li><a href="/Cos/cos/men3.jsp?pcategory=남성셔츠">셔츠</a></li>
+            <li><a href="/Cos/cos/men4.jsp?pcategory=남성트라우저">트라우저</a></li>
           </ul>
         </li>
 		<li><a href="sustain.html" class="MenuBarItemSubmenu">Sustainability</a>
@@ -67,9 +67,9 @@
     <div class="title">셔츠</div>
     <div class="cate">
       <div class="ca1">
-      	<a href="/Cos/cos/women3.jsp?pgender=여&pcategory=셔츠">모두보기</a>
-      	<a href="/Cos/cos/women3.jsp?pgender=여&pcategory=셔츠&psort=블라우스">블라우스</a>
-      	<a href="/Cos/cos/women3.jsp?pgender=여&pcategory=셔츠&psort=셔츠 드레스">셔츠 드레스</a>
+      	<a href="/Cos/cos/women3.jsp?pcategory=여성셔츠">모두보기</a>
+      	<a href="/Cos/cos/women3.jsp?psort=여성블라우스">블라우스</a>
+      	<a href="/Cos/cos/women3.jsp?psort=여성셔츠드레스">셔츠 드레스</a>
       </div>
     </div>
   </div>

@@ -32,18 +32,18 @@
         </li>
         <li><a class="MenuBarItemSubmenu" href="women.html">Women</a>
           <ul>
-            <li><a href="women.html">아우터웨어</a></li>
-            <li><a href="women.html">니트웨어</a></li>
-            <li><a href="women.html">셔츠</a></li>
-            <li><a href="women.html">드레스</a></li>
+            <li><a href="/Cos/cos/in/womenin1.jsp?pcategory=여성아우터웨어">아우터웨어</a></li>
+            <li><a href="/Cos/cos/in/womenin2.jsp?pcategory=여성니트웨어">니트웨어</a></li>
+            <li><a href="/Cos/cos/in/womenin3.jsp?pcategory=여성셔츠">셔츠</a></li>
+            <li><a href="/Cos/cos/in/womenin4.jsp?pcategory=여성드레스">드레스</a></li>
           </ul>
         </li>
         <li><a href="men.html" class="MenuBarItemSubmenu">Men</a>
           <ul>
-            <li><a href="men.html">아우터웨어</a></li>
-            <li><a href="men.html">니트웨어</a></li>
-            <li><a href="men.html">셔츠</a></li>
-            <li><a href="men.html">트라우저</a></li>
+            <li><a href="/Cos/cos/in/menin1.jsp?pcategory=남성아우터웨어">아우터웨어</a></li>
+            <li><a href="/Cos/cos/in/menin2.jsp?pcategory=남성니트웨어">니트웨어</a></li>
+            <li><a href="/Cos/cos/in/menin3.jsp?pcategory=남성셔츠">셔츠</a></li>
+            <li><a href="/Cos/cos/in/menin4.jsp?pcategory=남성트라우저">트라우저</a></li>
           </ul>
         </li>
 <li><a href="sustain.html" class="MenuBarItemSubmenu">Sustainability</a>
@@ -54,8 +54,8 @@
       </ul>
       <div class="psmenu">
         <div class="pms2"><a href="search.html">검색</a></div>
-        <div class="pms2"><a href="loginForm.html">로그인</a></div>
-        <div class="pms2"><a href="joinForm.html">회원가입</a></div>
+        <div class="pms2"><a href="memberinfo.html"><%=session.getAttribute("LOGINID") %> COS</a></div>
+        <div class="pms2"><a href="/Cos/login/logout.jsp">로그아웃</a></div>
         <div class="pms2"><a href="wishlist.html">위시리스트</a></div>
         <div class="pms2"><a href="cart.html">장바구니</a></div>
       </div>

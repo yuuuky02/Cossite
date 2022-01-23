@@ -31,18 +31,18 @@
         </li>
         <li><a class="MenuBarItemSubmenu" href="/Cos/cos/in/women_pin.jsp">Women</a>
           <ul>
-            <li><a href="/Cos/cos/in/womenin.jsp">아우터웨어</a></li>
-            <li><a href="/Cos/cos/in/womenin.jsp">니트웨어</a></li>
-            <li><a href="/Cos/cos/in/womenin.jsp">셔츠</a></li>
-            <li><a href="/Cos/cos/in/womenin.jsp">드레스</a></li>
+            <li><a href="/Cos/cos/in/womenin1.jsp?pcategory=여성아우터웨어">아우터웨어</a></li>
+            <li><a href="/Cos/cos/in/womenin2.jsp?pcategory=여성니트웨어">니트웨어</a></li>
+            <li><a href="/Cos/cos/in/womenin3.jsp?pcategory=여성셔츠">셔츠</a></li>
+            <li><a href="/Cos/cos/in/womenin4.jsp?pcategory=여성드레스">드레스</a></li>
           </ul>
         </li>
         <li><a href="/Cos/cos/in/men_pin.jsp" class="MenuBarItemSubmenu">Men</a>
           <ul>
-            <li><a href="/Cos/cos/in/menin.jsp">아우터웨어</a></li>
-            <li><a href="/Cos/cos/in/menin.jsp">니트웨어</a></li>
-            <li><a href="/Cos/cos/in/menin.jsp">셔츠</a></li>
-            <li><a href="/Cos/cos/in/menin.jsp">트라우저</a></li>
+            <li><a href="/Cos/cos/in/menin1.jsp?pcategory=남성아우터웨어">아우터웨어</a></li>
+            <li><a href="/Cos/cos/in/menin2.jsp?pcategory=남성니트웨어">니트웨어</a></li>
+            <li><a href="/Cos/cos/in/menin3.jsp?pcategory=남성셔츠">셔츠</a></li>
+            <li><a href="/Cos/cos/in/menin4.jsp?pcategory=남성트라우저">트라우저</a></li>
           </ul>
         </li>
 		<li><a href="sustain.html" class="MenuBarItemSubmenu">Sustainability</a>
@@ -64,10 +64,10 @@
     <div class="title">Men</div>
     <div class="cate">
       <div class="ca1">
-      	<a href="/Cos/cos/in/menin.jsp">Outerwear</a>
-      	<a href="/Cos/cos/in/menin.jsp">Knitwear</a>
-      	<a href="/Cos/cos/in/menin.jsp">Shirts</a>
-      	<a href="/Cos/cos/in/menin.jsp">Dresses</a>
+      	<a href="/Cos/cos/in/menin1.jsp?pcategory=남성아우터웨어">Outerwear</a>
+      	<a href="/Cos/cos/in/menin2.jsp?pcategory=남성니트웨어">Knitwear</a>
+      	<a href="/Cos/cos/in/menin3.jsp?pcategory=남성셔츠">Shirts</a>
+      	<a href="/Cos/cos/in/menin4.jsp?pcategory=남성트라우저">Trousers</a>
       </div>
     </div>
   </div>
@@ -87,19 +87,19 @@
   <div id="banner">
     <div class="ban2">
       <div class="banimg"></div>
-      <div class="baninfo"><a href="/Cos/cos/in/menin.jsp">남성 아우터웨어</a></div>
+      <div class="baninfo"><a href="/Cos/cos/in/menin1.jsp?pcategory=남성아우터웨어">남성 아우터웨어</a></div>
     </div>
     <div class="ban2">
       <div class="banimg"></div>
-      <div class="baninfo"><a href="/Cos/cos/in/menin.jsp">남성 니트웨어</a></div>
+      <div class="baninfo"><a href="/Cos/cos/in/menin2.jsp?pcategory=남성니트웨어">남성 니트웨어</a></div>
     </div>
     <div class="ban2">
       <div class="banimg"></div>
-      <div class="baninfo"><a href="/Cos/cos/in/menin.jsp">남성 셔츠</a></div>
+      <div class="baninfo"><a href="/Cos/cos/in/menin3.jsp?pcategory=남성셔츠">남성 셔츠</a></div>
     </div>
     <div class="ban2">
       <div class="banimg"></div>
-      <div class="baninfo"><a href="/Cos/cos/in/menin.jsp">남성 트라우저</a></div>
+      <div class="baninfo"><a href="/Cos/cos/in/menin4.jsp?pcategory=남성트라우저">남성 트라우저</a></div>
     </div>
   </div>
   <div class="tedul"></div>
